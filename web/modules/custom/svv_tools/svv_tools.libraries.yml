@@ -1,0 +1,4 @@
+ga:
+  version: 1.x
+  js:
+    js/ga.js: {}
