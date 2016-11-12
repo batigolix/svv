@@ -30,6 +30,7 @@
         "drupal/migrate_manifest": "1.2",
         "drupal/pathauto": "~1.0",
         "drupal/token": "~1.0",
+        "drupal/config_devel": "~1.0",
         "drupal/config_readonly": "~1.0"
     },
     "require-dev": {
