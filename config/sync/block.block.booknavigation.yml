@@ -1,0 +1,21 @@
+uuid: 1672045b-bc9b-444b-beff-a2cc55a3ff95
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - sebas
+id: booknavigation
+theme: sebas
+region: sidebar_first
+weight: -4
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: Inhoud
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }

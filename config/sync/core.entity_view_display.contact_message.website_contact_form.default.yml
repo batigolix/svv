@@ -1,0 +1,19 @@
+uuid: 8ff1d618-253d-41d7-afce-aadbde5c15c8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - contact.form.website_contact_form
+id: contact_message.website_contact_form.default
+targetEntityType: contact_message
+bundle: website_contact_form
+mode: default
+content:
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

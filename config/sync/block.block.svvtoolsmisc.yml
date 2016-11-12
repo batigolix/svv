@@ -1,0 +1,20 @@
+uuid: f97b9a33-34ef-4bf0-a3a4-f7ac49dff4b0
+langcode: nl
+status: false
+dependencies:
+  module:
+    - svv_tools
+  theme:
+    - sebas
+id: svvtoolsmisc
+theme: sebas
+region: '-1'
+weight: -5
+provider: null
+plugin: misc
+settings:
+  id: misc
+  label: 'SVV tools: Misc'
+  provider: svv_tools
+  label_display: visible
+visibility: {  }

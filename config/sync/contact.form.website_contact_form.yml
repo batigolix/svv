@@ -1,0 +1,13 @@
+uuid: c8479904-dc90-4669-8f62-f4c9d25de0db
+langcode: nl
+status: true
+dependencies: {  }
+id: website_contact_form
+label: 'Contact opnemen'
+recipients:
+  - mdoesborg@gmail.com
+  - bdoesborg@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

@@ -1,0 +1,13 @@
+uuid: 29f08e1d-4115-4d3d-a174-9a8b4b9dd1f8
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4w1vDIuPlVqNIiynysHZHU-9sBCpx5uiEIPlo4SW1tw
+id: personal
+label: 'Personal contact form'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

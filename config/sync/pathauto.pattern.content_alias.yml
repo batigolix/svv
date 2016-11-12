@@ -1,0 +1,23 @@
+uuid: de86528c-4014-4915-94a7-1a7ab94f3c84
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_alias
+label: 'Content alias'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  e7c3f95c-61a9-477b-9cc0-9c120a18a208:
+    id: node_type
+    bundles:
+      book: book
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e7c3f95c-61a9-477b-9cc0-9c120a18a208
+selection_logic: and
+weight: -5
+relationships: {  }

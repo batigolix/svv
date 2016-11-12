@@ -1,0 +1,20 @@
+uuid: 14f3adc0-f2dc-4f02-a483-8e48b05692ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sebas
+id: messages
+theme: sebas
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

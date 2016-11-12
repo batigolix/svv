@@ -1,0 +1,20 @@
+uuid: be94343d-11ec-4beb-ad45-65be8e47f03c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sebas
+id: mainpagecontent
+theme: sebas
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

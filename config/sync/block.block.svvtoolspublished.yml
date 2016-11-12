@@ -1,0 +1,20 @@
+uuid: 3ae68139-f369-4065-867c-41133093d3cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - svv_tools
+  theme:
+    - sebas
+id: svvtoolspublished
+theme: sebas
+region: sidebar_second
+weight: -1
+provider: null
+plugin: published
+settings:
+  id: published
+  label: 'SVV tools: Published'
+  provider: svv_tools
+  label_display: '0'
+visibility: {  }

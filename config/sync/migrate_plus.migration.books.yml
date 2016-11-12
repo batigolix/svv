@@ -1,0 +1,45 @@
+uuid: f8763047-cc1d-4975-9423-e3f14057e9d7
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tX4zipc7AAOpEB_1tgRcC9PKXhW1daIUbKUgBQBl5oA
+id: books
+migration_tags: null
+migration_group: SVV
+label: Books
+source:
+  plugin: json_source
+  path: 'http://svv.val/books.json'
+  headers:
+    Accept: application/json
+  identifier: nid
+  identifierDepth: 2
+  fields:
+    - nid
+    - title
+    - body
+    - created
+    - updated
+process:
+  type:
+    plugin: default_value
+    default_value: book
+  title: title
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: nl
+  body/format:
+    plugin: default_value
+    default_value: advanced_html
+  body/value: body
+  sticky:
+    plugin: default_value
+    default_value: 0
+  uid:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

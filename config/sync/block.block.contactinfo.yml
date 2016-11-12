@@ -1,0 +1,36 @@
+uuid: 84f39a32-a166-49fe-a0f5-41047513cbb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - svv_tools
+    - system
+  theme:
+    - sebas
+id: contactinfo
+theme: sebas
+region: content
+weight: -2
+provider: null
+plugin: contact_info
+settings:
+  id: contact_info
+  label: Text
+  provider: svv_tools
+  label_display: '0'
+  contact_info_markup_string: 'U kunt op verschillende manieren contact met ons opnemen.<h3>Adres</h3>Stichting Veldense Volkscultuur<br />Jan Verschurensingel 20<br />5941 CK Velden<h3>Telefoon</h3>077-4721586<h3>E-mail</h3>h.derix@ziggo.nl<h3>Contactformulier</h3>'
+  cache:
+    max_age: 3600
+    contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }
