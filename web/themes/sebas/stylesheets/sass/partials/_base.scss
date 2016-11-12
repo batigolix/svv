@@ -1,0 +1,13 @@
+$brown: #593E1A;
+$light_blue: #79BEDB;
+$dark_blue: #6B78B4;
+$green: #266A2E;
+
+$light_grey: #adadb0;
+$dark_grey: #635753;
+
+@mixin font($weight: 700) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-weight: $weight;
+}

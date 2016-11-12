@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Shoami theme.
+ */
+
+use Drupal\Core\Template\Attribute;
