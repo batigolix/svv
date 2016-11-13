@@ -31,7 +31,8 @@
         "drupal/pathauto": "~1.0",
         "drupal/token": "~1.0",
         "drupal/config_devel": "~1.0",
-        "drupal/config_readonly": "~1.0"
+        "drupal/config_readonly": "~1.0",
+        "drupal/backup_migrate": "*@dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
