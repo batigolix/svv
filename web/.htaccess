@@ -105,7 +105,13 @@ AddEncoding gzip svgz
   # RewriteCond %{HTTP_HOST} .
   # RewriteCond %{HTTP_HOST} !^www\. [NC]
   # RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  #
+
+
+# rewrite veldense-volkscultuur.nl to www.veldense-volkscultuur.nl. but dont do this for local dev or staging domain names.
+RewriteCond veldense-volkscultuur.nl .
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
   # To redirect all users to access the site WITHOUT the 'www.' prefix,
   # (http://www.example.com/foo will be redirected to http://example.com/foo)
   # uncomment the following:
