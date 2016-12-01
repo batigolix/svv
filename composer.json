@@ -32,7 +32,8 @@
         "drupal/token": "~1.0",
         "drupal/config_devel": "~1.0",
         "drupal/config_readonly": "~1.0",
-        "drupal/backup_migrate": "*@dev"
+        "drupal/backup_migrate": "*@dev",
+        "drupal/migrate_source_json": "*@dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
