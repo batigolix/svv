@@ -7,7 +7,8 @@
   .site-content h1 {
     font-size: 2.5rem;
     line-height: 1.225;
-    margin-bottom: 1.05em; }
+    margin-bottom: 1.05em;
+    color: #593E1A; }
 
 body {
   background: #593E1A; }
@@ -78,9 +79,20 @@ body {
 .site-footer {
   font-size: 80%; }
 
-.site-logo {
+.site-branding .site-title a {
+  color: #593E1A; }
+.site-branding .site-logo {
   width: 360px; }
-  .site-logo img {
+  .site-branding .site-logo img {
     margin-bottom: 1em; }
+
+.main-navigation .primary-menu li {
+  background: #266A2E; }
+  .main-navigation .primary-menu li a {
+    text-decoration: underline; }
+    .main-navigation .primary-menu li a:hover, .main-navigation .primary-menu li a:active, .main-navigation .primary-menu li a:link, .main-navigation .primary-menu li a:visited {
+      color: white; }
+    .main-navigation .primary-menu li a .is-active {
+      color: #000; }
 
 /*# sourceMappingURL=sebas.css.map */

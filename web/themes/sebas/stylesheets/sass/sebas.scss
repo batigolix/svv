@@ -9,6 +9,7 @@
     font-size: 2.5rem;
     line-height: 1.225;
     margin-bottom: 1.05em;
+    color: $brown;
   }
 }
 
@@ -108,9 +109,33 @@ body {
   font-size: 80%;
 }
 
-.site-logo {
-  width: 360px;
-  img {
-    margin-bottom: 1em;
+.site-branding {
+  .site-title {
+    a {
+      color: $brown;
+    }
+  }
+  .site-logo {
+    width: 360px;
+    img {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.main-navigation {
+  .primary-menu {
+    li {
+      background: $green;
+      a {
+        text-decoration: underline;
+        &:hover, &:active, &:link, &:visited {
+          color: white;
+        }
+        .is-active {
+          color: #000;
+        }
+      }
+    }
   }
 }
