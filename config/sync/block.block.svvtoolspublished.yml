@@ -1,6 +1,6 @@
 uuid: 3ae68139-f369-4065-867c-41133093d3cd
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - svv_tools
@@ -8,8 +8,8 @@ dependencies:
     - sebas
 id: svvtoolspublished
 theme: sebas
-region: sidebar_second
-weight: -1
+region: '-1'
+weight: -5
 provider: null
 plugin: published
 settings:

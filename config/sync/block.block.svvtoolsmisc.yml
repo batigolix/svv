@@ -9,7 +9,7 @@ dependencies:
 id: svvtoolsmisc
 theme: sebas
 region: '-1'
-weight: -5
+weight: -6
 provider: null
 plugin: misc
 settings:
