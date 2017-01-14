@@ -2,8 +2,10 @@ global-styling:
   version: 1.x
   css:
     theme:
-      stylesheets/ie.css: {}
-      stylesheets/screen.css: {}
+      stylesheets/2016/ie.css: {}
+      stylesheets/2016/style.css: {}
+#      stylesheets/ie.css: {}
+      stylesheets/sebas.css: {}
       stylesheets/print.css: { media: print }
       'https://fonts.googleapis.com/css?family=Montserrat:400,700': {}
       'https://fonts.googleapis.com/css?family=Merriweather': {}
