@@ -2,3 +2,5 @@ bullets http://www.veldense-volkscultuur.nl/velden-maas
 block account creation
 ipad layout
 CROn
+resize embedded images
+resp menu button broken

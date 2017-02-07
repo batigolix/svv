@@ -79,20 +79,28 @@ body {
 .site-footer {
   font-size: 80%; }
 
-.site-branding .site-title a {
-  color: #593E1A; }
+.site-branding .site-title {
+  display: none; }
+  .site-branding .site-title a {
+    color: #593E1A; }
+.site-branding .site-description {
+  display: none; }
 .site-branding .site-logo {
-  width: 360px; }
-  .site-branding .site-logo img {
-    margin-bottom: 1em; }
+  width: 320px;
+  margin: -80px 0 0 0; }
 
-.main-navigation .primary-menu li {
-  background: #266A2E; }
-  .main-navigation .primary-menu li a {
-    text-decoration: underline; }
-    .main-navigation .primary-menu li a:hover, .main-navigation .primary-menu li a:active, .main-navigation .primary-menu li a:link, .main-navigation .primary-menu li a:visited {
-      color: white; }
-    .main-navigation .primary-menu li a .is-active {
-      color: #000; }
+.main-navigation .primary-menu li a {
+  text-decoration: underline; }
+  .main-navigation .primary-menu li a:hover, .main-navigation .primary-menu li a:active, .main-navigation .primary-menu li a:link, .main-navigation .primary-menu li a:visited {
+    color: #266A2E; }
+  .main-navigation .primary-menu li a .is-active {
+    color: #000; }
+
+.menu-toggled .primary-menu li a {
+  text-decoration: underline; }
+  .menu-toggled .primary-menu li a:hover, .menu-toggled .primary-menu li a:active, .menu-toggled .primary-menu li a:link, .menu-toggled .primary-menu li a:visited {
+    color: #222; }
+  .menu-toggled .primary-menu li a .is-active {
+    color: #000; }
 
 /*# sourceMappingURL=sebas.css.map */

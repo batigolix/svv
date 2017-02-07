@@ -1579,7 +1579,7 @@ blockquote:after,
 	/* Avoid overflowing wide custom logo in small screens in Firefox and IEs */
 	max-width: 100%;
 	min-width: 0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .custom-logo-link {

@@ -111,26 +111,48 @@ body {
 
 .site-branding {
   .site-title {
+    display: none;
     a {
       color: $brown;
     }
   }
+  .site-description {
+    display: none;
+  }
   .site-logo {
-    width: 360px;
+//        display: none;
+    width: 320px;
     img {
-      margin-bottom: 1em;
     }
+    margin: -80px 0 0 0;
   }
 }
 
 .main-navigation {
   .primary-menu {
     li {
-      background: $green;
+//      background: $green;
       a {
         text-decoration: underline;
         &:hover, &:active, &:link, &:visited {
-          color: white;
+          color: $green;
+        }
+        .is-active {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.menu-toggled {
+  .primary-menu {
+    li {
+//      background: #FFF;
+      a {
+        text-decoration: underline;
+        &:hover, &:active, &:link, &:visited {
+          color: #222;
         }
         .is-active {
           color: #000;
