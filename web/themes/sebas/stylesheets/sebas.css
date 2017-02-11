@@ -103,4 +103,7 @@ body {
   .menu-toggled .primary-menu li a .is-active {
     color: #000; }
 
+.body, .book-navigation {
+  clear: both; }
+
 /*# sourceMappingURL=sebas.css.map */

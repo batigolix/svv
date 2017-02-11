@@ -19,3 +19,5 @@ web/sites/simpletest
 .DS_Store
 
 *.css.map
+
+*.sql
