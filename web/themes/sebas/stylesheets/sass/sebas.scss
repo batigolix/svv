@@ -166,4 +166,22 @@ body {
   clear: both;
 }
 
+.button {
+  margin: 0 0 1em 0;
+  a {
+    color: #FFF;
+    &:link, &:visited, &:active, &:hover {
+      color: #FFF;
+    }
+  }
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
 
