@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "97ce405713a119bc57709e451fbce38d",
+    "content-hash": "ec08169b58cc57a017bb6ef7a0cdfb22",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -855,21 +855,89 @@
             "time": "2017-05-05T21:26:28+00:00"
         },
         {
-            "name": "drupal/config_devel",
+            "name": "drupal/backup_migrate",
+            "version": "4.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/backup_migrate",
+                "reference": "8.x-4.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_migrate-8.x-4.0-beta3.zip",
+                "reference": "8.x-4.0-beta3",
+                "shasum": "5f78a25aaa207c12ae32f08fa00bd3fa51c49d70"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.0-beta3",
+                    "datestamp": "1508340336",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ronan Dowling",
+                    "homepage": "https://www.drupal.org/u/ronan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "dgorton",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ikit-claw",
+                    "homepage": "https://www.drupal.org/user/3285813"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
+            "description": "Backup and Migrate Drupal Module",
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "support": {
+                "source": "http://cgit.drupalcode.org/backup_migrate",
+                "issues": "https://www.drupal.org/project/issues/backup_migrate"
+            }
+        },
+        {
+            "name": "drupal/config_filter",
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/config_devel",
+                "url": "https://git.drupal.org/project/config_filter",
                 "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.1.zip",
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.1.zip",
                 "reference": "8.x-1.1",
-                "shasum": "c5ef4dd63c747671e6dbaacd059da19d12a5ea84"
+                "shasum": "4fffc62f2e1214bc58e7318c780eec04c5cd1d4c"
             },
             "require": {
                 "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "drupal/config_split": "Split site configuration for different environments."
             },
             "type": "drupal-module",
             "extra": {
@@ -878,7 +946,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1",
-                    "datestamp": "1505141044",
+                    "datestamp": "1511779985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -891,38 +959,33 @@
             ],
             "authors": [
                 {
-                    "name": "alexpott",
-                    "homepage": "https://www.drupal.org/user/157725"
+                    "name": "Fabian Bircher",
+                    "homepage": "https://www.drupal.org/u/bircher",
+                    "email": "opensource@fabianbircher.com",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "benjy",
-                    "homepage": "https://www.drupal.org/user/1852732"
+                    "name": "Nuvole Web",
+                    "homepage": "http://nuvole.org",
+                    "email": "info@nuvole.org",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "chx",
-                    "homepage": "https://www.drupal.org/user/9446"
-                },
-                {
-                    "name": "joachim",
-                    "homepage": "https://www.drupal.org/user/107701"
-                },
-                {
-                    "name": "nedjo",
-                    "homepage": "https://www.drupal.org/user/4481"
-                },
-                {
-                    "name": "tim.plunkett",
-                    "homepage": "https://www.drupal.org/user/241634"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
                 }
             ],
-            "description": "Helps developers work with configuration.",
-            "homepage": "https://www.drupal.org/project/config_devel",
+            "description": "Config Filter allows other modules to interact with a ConfigStorage through filter plugins.",
+            "homepage": "https://www.drupal.org/project/config_filter",
+            "keywords": [
+                "Drupal",
+                "configuration",
+                "configuration management"
+            ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_devel"
+                "source": "http://cgit.drupalcode.org/config_filter",
+                "issues": "https://www.drupal.org/project/issues/config_filter",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -986,6 +1049,73 @@
             "homepage": "https://www.drupal.org/project/config_readonly",
             "support": {
                 "source": "http://cgit.drupalcode.org/config_readonly"
+            }
+        },
+        {
+            "name": "drupal/config_split",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_split",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "f3683737bae3927073b511c1313a047668d0eab1"
+            },
+            "require": {
+                "drupal/config_filter": "*",
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1511810585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Bircher",
+                    "homepage": "https://www.drupal.org/u/bircher",
+                    "email": "opensource@fabianbircher.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nuvole Web",
+                    "homepage": "http://nuvole.org",
+                    "email": "info@nuvole.org",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
+                }
+            ],
+            "description": "Configuration filter for importing and exporting extra config",
+            "homepage": "https://www.drupal.org/project/config_split",
+            "keywords": [
+                "Drupal",
+                "configuration",
+                "configuration management"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_split",
+                "issues": "https://www.drupal.org/project/issues/config_split",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -1263,31 +1393,34 @@
             }
         },
         {
-            "name": "drupal/migrate_manifest",
-            "version": "1.2.0",
+            "name": "drupal/environment_indicator",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/migrate_manifest",
-                "reference": "8.x-1.2"
+                "url": "https://git.drupal.org/project/environment_indicator",
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_manifest-8.x-1.2.zip",
-                "reference": null,
-                "shasum": "3d7eedc628124d6240ca122efd0d03ba1428b3b2"
+                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "12291652b86726f26df8a548238a5d333e25a2ef"
             },
             "require": {
-                "drupal/core": "~8.0",
-                "drupal/migrate_tools": "*"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1466016839"
+                    "version": "8.x-3.2",
+                    "datestamp": "1506872344",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1296,18 +1429,18 @@
             ],
             "authors": [
                 {
-                    "name": "lostkangaroo",
-                    "homepage": "https://www.drupal.org/user/2412664"
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
                 },
                 {
-                    "name": "neclimdul",
-                    "homepage": "https://www.drupal.org/user/48673"
+                    "name": "mrfelton",
+                    "homepage": "https://www.drupal.org/user/305669"
                 }
             ],
-            "description": "Supports the running of migrations using a structured manifest file.",
-            "homepage": "https://www.drupal.org/project/migrate_manifest",
+            "description": "Adds a color indicator for the different environments.",
+            "homepage": "https://www.drupal.org/project/environment_indicator",
             "support": {
-                "source": "http://cgit.drupalcode.org/migrate_manifest"
+                "source": "http://cgit.drupalcode.org/environment_indicator"
             }
         },
         {
@@ -4711,6 +4844,77 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
+            "name": "drupal/config_devel",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_devel",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "203bf299b1ad395d1451e22ea5a8f25ae462d880"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1510843084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                },
+                {
+                    "name": "chx",
+                    "homepage": "https://www.drupal.org/user/9446"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Helps developers work with configuration.",
+            "homepage": "https://www.drupal.org/project/config_devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_devel"
+            }
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.2",
             "source": {
@@ -5087,34 +5291,31 @@
             }
         },
         {
-            "name": "drupal/environment_indicator",
-            "version": "3.2.0",
+            "name": "drupal/migrate_manifest",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/environment_indicator",
-                "reference": "8.x-3.2"
+                "url": "https://git.drupal.org/project/migrate_manifest",
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/environment_indicator-8.x-3.2.zip",
-                "reference": "8.x-3.2",
-                "shasum": "12291652b86726f26df8a548238a5d333e25a2ef"
+                "url": "https://ftp.drupal.org/files/projects/migrate_manifest-8.x-1.2.zip",
+                "reference": null,
+                "shasum": "3d7eedc628124d6240ca122efd0d03ba1428b3b2"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "~8.0",
+                "drupal/migrate_tools": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.2",
-                    "datestamp": "1506872344",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
+                    "version": "8.x-1.2",
+                    "datestamp": "1466016839"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5123,18 +5324,18 @@
             ],
             "authors": [
                 {
-                    "name": "e0ipso",
-                    "homepage": "https://www.drupal.org/user/550110"
+                    "name": "lostkangaroo",
+                    "homepage": "https://www.drupal.org/user/2412664"
                 },
                 {
-                    "name": "mrfelton",
-                    "homepage": "https://www.drupal.org/user/305669"
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
                 }
             ],
-            "description": "Adds a color indicator for the different environments.",
-            "homepage": "https://www.drupal.org/project/environment_indicator",
+            "description": "Supports the running of migrations using a structured manifest file.",
+            "homepage": "https://www.drupal.org/project/migrate_manifest",
             "support": {
-                "source": "http://cgit.drupalcode.org/environment_indicator"
+                "source": "http://cgit.drupalcode.org/migrate_manifest"
             }
         },
         {
