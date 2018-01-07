@@ -740,6 +740,24 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+$settings['hash_salt'] = 'jX5wvXqmIXNhxNG8rmWydAgdHJ9G9TMK6_kweqEnqJe8kWq7CVfe8IDYvRJqfFTPRzFtg2SOhA';
+
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = '../config/sync';
+
+$settings['trusted_host_patterns'] = array(
+  '^www\.veldense-volkscultuur\.nl$',
+  '^.+\.veldense-volkscultuur\.nl$',
+  '^\.veldense-volkscultuur\.nl$',
+  '^svv8\.doesb\.org$',
+  '^svv\.drupalvm\.val$',
+  '^svv\.drupalvm\.dev$',
+  '^svv\.drupalvm\.test$'
+  '^svv-build\.drupalvm\.val$',
+  '^svv-build\.drupalvm\.dev$',
+  '^svv-build\.drupalvm\.test$'
+);
+
 /**
  * Load local development override configuration, if available.
  *
@@ -753,3 +771,4 @@ $settings['file_scan_ignore_directories'] = [
 if (file_exists(__DIR__ . '/settings.local.php')) {
    include __DIR__ . '/settings.local.php';
 }
+
