@@ -1,5 +1,6 @@
 module:
   automated_cron: 0
+  backup_migrate: 0
   block: 0
   block_content: 0
   book: 0
@@ -8,7 +9,9 @@ module:
   color: 0
   config: 0
   config_devel: 0
+  config_filter: 0
   config_readonly: 0
+  config_split: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -26,10 +29,6 @@ module:
   link: 0
   locale: 0
   menu_ui: 0
-  migrate: 0
-  migrate_plus: 0
-  migrate_source_json: 0
-  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
@@ -56,3 +55,4 @@ theme:
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: nl
+profile: standard

@@ -1,4 +1,4 @@
-uuid: 14f3adc0-f2dc-4f02-a483-8e48b05692ef
+uuid: c90c5af4-bc82-4e3d-a388-02320116d9ae
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - system
   theme:
     - sebas
-id: messages
+id: breadcrumbs
 theme: sebas
 region: content
-weight: -4
+weight: -5
 provider: null
-plugin: system_messages_block
+plugin: system_breadcrumb_block
 settings:
-  id: system_messages_block
-  label: Messages
+  id: system_breadcrumb_block
+  label: Breadcrumbs
   provider: system
   label_display: '0'
 visibility: {  }
