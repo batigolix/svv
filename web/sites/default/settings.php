@@ -752,7 +752,7 @@ $settings['trusted_host_patterns'] = array(
   '^svv8\.doesb\.org$',
   '^svv\.drupalvm\.val$',
   '^svv\.drupalvm\.dev$',
-  '^svv\.drupalvm\.test$'
+  '^svv\.drupalvm\.test$',
   '^svv-build\.drupalvm\.val$',
   '^svv-build\.drupalvm\.dev$',
   '^svv-build\.drupalvm\.test$'
