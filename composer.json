@@ -27,7 +27,7 @@
         "drupal/token": "~1.0",
         "drupal/config_readonly": "~1.0",
         "drupal/environment_indicator": "~3.0",
-        "drupal/config_split": "1.2",
+        "drupal/config_split": "~1.0",
         "drupal/backup_migrate": "~4.0",
         "drupal/admin_toolbar": "~1.0"
     },

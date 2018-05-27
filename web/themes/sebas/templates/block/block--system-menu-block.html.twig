@@ -37,7 +37,7 @@
 <div id="site-header-menu" class="site-header-menu">
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav id="site-navigation" role="navigation" aria-label="Primary Menu" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }} {{ attributes.addClass('main-navigation') }}>
+<nav id="site-navigation" role="navigation" aria-label="Primary Menu" aria-labelledby="{{ heading_id }}" {{ attributes.addClass('main-navigation') }}>
 
 
   {#<nav  class="main-navigation" role="navigation"#}
