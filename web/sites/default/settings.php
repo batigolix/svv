@@ -742,22 +742,13 @@ $settings['file_scan_ignore_directories'] = [
 
 $settings['hash_salt'] = 'jX5wvXqmIXNhxNG8rmWydAgdHJ9G9TMK6_kweqEnqJe8kWq7CVfe8IDYvRJqfFTPRzFtg2SOhA';
 
-$settings['install_profile'] = 'standard';
+#$settings['install_profile'] = 'standard';
 $config_directories['sync'] = '../config/sync';
 
 $settings['trusted_host_patterns'] = array(
   '^www\.veldense-volkscultuur\.nl$',
   '^.+\.veldense-volkscultuur\.nl$',
   '^\.veldense-volkscultuur\.nl$',
-  '^svv8\.doesb\.org$',
-  '^svv\.drupalvm\.val$',
-  '^svv\.drupalvm\.dev$',
-  '^svv\.drupalvm\.test$',
-  '^svv-build\.drupalvm\.val$',
-  '^svv-build\.drupalvm\.dev$',
-  '^svv-build\.drupalvm\.test$',
-  '^svv\.drupalvmk\.test$',
-  '^svv\.kem$',
 );
 
 /**
