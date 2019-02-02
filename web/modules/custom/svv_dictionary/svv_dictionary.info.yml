@@ -1,0 +1,12 @@
+name: 'svv_dictionary'
+type: module
+description: 'SVV Dictionary'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - migrate_tools
+  - migrate_plus
+  - migrate_source_csv
+
+config_devel:
+  - migrate_plus.migration.svv_dictionary

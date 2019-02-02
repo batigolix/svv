@@ -1,0 +1,62 @@
+id: svv_dictionary
+label: Import dictionary
+migration_groups:
+  - SVV import
+
+source:
+  plugin: csv
+  # Full path to the file.
+  path: '/var/www/html/web/modules/custom/svv_dictionary/test-data/svv_dictionary.csv'
+  # Column delimiter. Comma (,) by default.
+  delimiter: ','
+  # Field enclosure. Double quotation marks (") by default.
+  enclosure: '"'
+  # The number of rows at the beginning which are not data.
+  header_row_count: 1
+  # The column(s) to use as a key. Each column specified will
+  # create an index in the migration table and too many columns
+  # may throw an index size error.
+  keys:
+    - id
+  # Here we identify the columns of interest in the source file.
+  # Each numeric key is the 0-based index of the column.
+  # For each column, the key below is the field name assigned to
+  # the data on import, to be used in field mappings below.
+  # The value is a user-friendly string for display by the
+  # migration UI.
+  column_names:
+    0:
+      id: 'id'
+    1:
+      changed: 'changed'
+    2:
+      letter: 'letter'
+    3:
+      head_word: 'head_word'
+    4:
+      translation: 'translation'
+    5:
+      conjugation: 'conjugation'
+process:
+  title: head_word
+  field_head_word: head_word
+  field_translation: translation
+  field_conjugation: conjugation
+  type:
+    plugin: default_value
+    default_value: dictionary_entry
+  field_first_char_head_word:
+    plugin: first_character
+    source: head_word
+  field_first_char_translation:
+    plugin: first_character
+    source: translation
+  status:
+    plugin: default_value
+    default_value: true
+  uid:
+    plugin: default_value
+    default_value: 1
+
+destination:
+  plugin: entity:node
