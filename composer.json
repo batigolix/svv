@@ -22,14 +22,16 @@
         "drupal/core": "^8.6",
         "drush/drush": "~8.0",
         "drupal/ctools": "~3.0",
-        "drupal/migrate_tools": "2.0-beta1",
+        "drupal/migrate_tools": "^4.1",
         "drupal/pathauto": "~1.0",
         "drupal/token": "~1.0",
         "drupal/config_readonly": "~1.0",
         "drupal/environment_indicator": "^3.5",
         "drupal/config_split": "~1.0",
         "drupal/backup_migrate": "~4.0",
-        "drupal/admin_toolbar": "~1.0"
+        "drupal/admin_toolbar": "~1.0",
+        "drupal/migrate_source_csv": "^2.2",
+        "drupal/migrate_plus": "^4.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -41,9 +43,7 @@
         "symfony/css-selector": "~2.8",
         "drupal/console": "~1.0",
         "drupal/devel": "~1.0",
-        "drupal/config_devel": "~1.0",
-        "drupal/migrate_plus": "2.0-beta1",
-        "drupal/migrate_manifest": "1.2"
+        "drupal/config_devel": "~1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
