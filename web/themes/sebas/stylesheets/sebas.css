@@ -181,4 +181,8 @@ body {
   font-weight: bold;
 }
 
+.dictionary input[type=text] {
+  width: 50%;
+}
+
 /*# sourceMappingURL=sebas.css.map */

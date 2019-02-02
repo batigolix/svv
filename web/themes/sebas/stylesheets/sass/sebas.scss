@@ -205,3 +205,9 @@ body {
 .pager__item.is-active {
   font-weight: bold;
 }
+
+.dictionary {
+  input[type="text"] {
+    width: 50%;
+  }
+}

@@ -311,29 +311,39 @@ display:
       style:
         type: table
         options:
-          columns:
-            title: title
-            name: name
-            changed: changed
-          default: title
-          info:
-            title:
-              sortable: true
-              separator: ''
-            name:
-              sortable: true
-              separator: ''
-            changed:
-              sortable: true
-              separator: ''
-          override: true
-          sticky: false
           grouping: {  }
           row_class: ''
           default_row_class: true
-          uses_fields: false
-          order: asc
+          override: true
+          sticky: false
+          caption: ''
           summary: ''
+          description: ''
+          columns:
+            field_head_word: field_head_word
+            field_translation: field_translation
+            field_conjugation: field_conjugation
+          info:
+            field_head_word:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_translation:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_conjugation:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: field_head_word
           empty_table: false
       row:
         type: fields
@@ -473,6 +483,7 @@ display:
         groups:
           1: AND
       title: 'Woordenboek Nederlands - Veldens'
+      css_class: dictionary
     cache_metadata:
       contexts:
         - 'languages:language_content'
