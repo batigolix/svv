@@ -1,0 +1,5 @@
+services:
+  svv_dictionary.subscriber.pre_import:
+    class: Drupal\svv_dictionary\EventSubscriber\PreImportEvent
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,11 @@
+
+svv_dictionary.config_form:
+  path: '/admin/config/system/svv_dictionary/config'
+  defaults:
+    _form: '\Drupal\svv_dictionary\Form\ConfigForm'
+    _title: 'ConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

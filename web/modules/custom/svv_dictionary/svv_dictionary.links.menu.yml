@@ -1,0 +1,7 @@
+svv_dictionary.config_form:
+  title: 'SVV dictionary config'
+  route_name: svv_dictionary.config_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

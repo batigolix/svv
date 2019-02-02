@@ -10,3 +10,4 @@ dependencies:
 
 config_devel:
   - migrate_plus.migration.svv_dictionary
+  - svv_dictionary.config
