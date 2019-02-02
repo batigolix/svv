@@ -4,8 +4,10 @@ status: true
 dependencies: {  }
 id: development_configuration
 label: 'Development configuration'
+description: ''
 folder: ../config_dev
 module:
+  config_devel: 0
   devel: 0
 theme: {  }
 blacklist: {  }

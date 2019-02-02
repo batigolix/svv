@@ -3,8 +3,8 @@ langcode: nl
 status: true
 dependencies: {  }
 id: svv
-label: svv
-description: svv
-source_type: svv
+label: 'Stichting Veldense Volkscultuur'
+description: 'Stichting Veldense Volkscultuur data importeren'
+source_type: CSV
 module: null
 shared_configuration: null
