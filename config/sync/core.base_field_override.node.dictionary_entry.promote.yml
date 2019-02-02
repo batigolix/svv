@@ -1,0 +1,22 @@
+uuid: 0ef2f157-6517-4f8f-affe-28c2876c3b19
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.dictionary_entry
+id: node.dictionary_entry.promote
+field_name: promote
+entity_type: node
+bundle: dictionary_entry
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: dc45c92a-26e4-434b-b4da-85e20652d0a1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.dictionary_entry
+id: node.dictionary_entry.status
+field_name: status
+entity_type: node
+bundle: dictionary_entry
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 84b43e63-c617-4f8c-92bd-5aaef35ddcea
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dictionary_entry.field_conjugation
+    - field.field.node.dictionary_entry.field_head_word
+    - field.field.node.dictionary_entry.field_translation
+    - node.type.dictionary_entry
+  module:
+    - user
+id: node.dictionary_entry.teaser
+targetEntityType: node
+bundle: dictionary_entry
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_conjugation: true
+  field_head_word: true
+  field_translation: true
+  langcode: true

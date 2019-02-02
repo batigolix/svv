@@ -1,0 +1,46 @@
+uuid: 0dd72c5f-e131-4a61-86ac-03370b8c1002
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.dictionary_entry.field_conjugation
+    - field.field.node.dictionary_entry.field_first_char_head_word
+    - field.field.node.dictionary_entry.field_first_char_translation
+    - field.field.node.dictionary_entry.field_head_word
+    - field.field.node.dictionary_entry.field_translation
+    - node.type.dictionary_entry
+  module:
+    - user
+id: node.dictionary_entry.default
+targetEntityType: node
+bundle: dictionary_entry
+mode: default
+content:
+  field_conjugation:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_head_word:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_translation:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_first_char_head_word: true
+  field_first_char_translation: true
+  langcode: true
+  links: true

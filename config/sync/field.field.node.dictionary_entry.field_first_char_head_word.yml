@@ -1,0 +1,19 @@
+uuid: 306d8f1c-e81d-4308-8495-90d15c4c81e0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_char_head_word
+    - node.type.dictionary_entry
+id: node.dictionary_entry.field_first_char_head_word
+field_name: field_first_char_head_word
+entity_type: node
+bundle: dictionary_entry
+label: 'First character head word'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

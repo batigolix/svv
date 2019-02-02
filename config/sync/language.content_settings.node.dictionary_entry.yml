@@ -1,0 +1,11 @@
+uuid: 287e6206-cb37-453b-8c70-a54c04e05d72
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.dictionary_entry
+id: node.dictionary_entry
+target_entity_type_id: node
+target_bundle: dictionary_entry
+default_langcode: site_default
+language_alterable: false

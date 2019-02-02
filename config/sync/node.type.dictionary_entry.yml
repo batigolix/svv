@@ -1,0 +1,17 @@
+uuid: b7d3239e-d92c-4c51-96d1-606795e58472
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Dictionary entry'
+type: dictionary_entry
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
