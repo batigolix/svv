@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c6425be098c45ecffb107082b8906f5",
+    "content-hash": "f04005139c8a9eed5b2bc7618ef68f2e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5581,6 +5581,89 @@
                 "source": "http://cgit.drupalcode.org/devel",
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/migrate_example",
+            "version": "4.1.0",
+            "require": {
+                "drupal/core": "*",
+                "drupal/migrate_example_setup": "*",
+                "drupal/migrate_plus": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1546879080",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Examples of how Drupal 8 migration compares to previous versions.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_plus"
+            }
+        },
+        {
+            "name": "drupal/migrate_example_setup",
+            "version": "4.1.0",
+            "require": {
+                "drupal/core": "*",
+                "drupal/migrate_plus": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1546879080",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Separate site configuration for the example from the actual migration.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_plus"
             }
         },
         {
