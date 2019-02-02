@@ -1,110 +1,143 @@
+@charset "UTF-8";
 .site-content {
-  font-family: 'Merriweather', 'Georgia', serif; }
-  .site-content h1, .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-weight: 700; }
-  .site-content h1 {
-    font-size: 2.5rem;
-    line-height: 1.225;
-    margin-bottom: 1.05em;
-    color: #593E1A; }
+  font-family: "Merriweather", "Georgia", serif;
+}
+.site-content h1, .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+}
+.site-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.225;
+  margin-bottom: 1.05em;
+  color: #593E1A;
+}
 
 body {
-  background: #593E1A; }
+  background: #593E1A;
+}
 
 /* breadcrumbs */
 .breadcrumb {
   font-size: 0.8em;
-  padding-bottom: 0.5em; }
-  .breadcrumb ol {
-    margin: 0;
-    padding: 0; }
-    .breadcrumb ol li {
-      display: inline;
-      list-style-type: none;
-      margin: 0;
-      padding: 0; }
-      .breadcrumb ol li:before {
-        content: ' \BB '; }
-      .breadcrumb ol li:first-child:before {
-        content: none; }
+  padding-bottom: 0.5em;
+}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb ol li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb ol li:before {
+  content: " »";
+}
+.breadcrumb ol li:first-child:before {
+  content: none;
+}
 
 /* sidebar book nav */
 .block-book-navigation ul.menu {
   list-style: none outside;
   margin-left: 1em;
   padding: 0;
-  text-align: left; }
-  .block-book-navigation ul.menu a.is-active:hover, .block-book-navigation ul.menu a.is-active:active, .block-book-navigation ul.menu a.is-active:link, .block-book-navigation ul.menu a.is-active:visited {
-    color: #000; }
-  .block-book-navigation ul.menu li.menu-item--expanded {
-    list-style-image: url(../../../core/misc/menu-expanded.png);
-    list-style-type: circle; }
-  .block-book-navigation ul.menu .menu-item--collapsed {
-    list-style-image: url(../../../core/misc/menu-collapsed.png);
-    list-style-type: disc; }
-  .block-book-navigation ul.menu .menu-item {
-    padding-top: 0.2em;
-    margin: 0 0 0.2em 0; }
+  text-align: left;
+}
+.block-book-navigation ul.menu a.is-active:hover, .block-book-navigation ul.menu a.is-active:active, .block-book-navigation ul.menu a.is-active:link, .block-book-navigation ul.menu a.is-active:visited {
+  color: #000;
+}
+.block-book-navigation ul.menu li.menu-item--expanded {
+  list-style-image: url(../../../core/misc/menu-expanded.png);
+  list-style-type: circle;
+}
+.block-book-navigation ul.menu .menu-item--collapsed {
+  list-style-image: url(../../../core/misc/menu-collapsed.png);
+  list-style-type: disc;
+}
+.block-book-navigation ul.menu .menu-item {
+  padding-top: 0.2em;
+  margin: 0 0 0.2em 0;
+}
 
 /* book navigation under book content */
 .book-navigation {
   border-top: 2px solid #593E1A;
   opacity: 0.9;
-  margin: 1em 0; }
-  .book-navigation .menu {
-    padding-bottom: 0;
-    padding-top: 1em; }
-  .book-navigation .book-pager {
-    margin: 0;
-    overflow: auto;
-    padding: 0.5em 0; }
-  .book-navigation .book-pager__item {
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: top; }
-  .book-navigation .book-pager__item--previous {
-    text-align: left;
-    width: 45%; }
-  .book-navigation .book-pager__item--center {
-    text-align: center;
-    width: 8%; }
-  .book-navigation .book-pager__item--next {
-    float: right;
-    text-align: right;
-    width: 45%; }
+  margin: 1em 0;
+}
+.book-navigation .menu {
+  padding-bottom: 0;
+  padding-top: 1em;
+}
+.book-navigation .book-pager {
+  margin: 0;
+  overflow: auto;
+  padding: 0.5em 0;
+}
+.book-navigation .book-pager__item {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
+.book-navigation .book-pager__item--previous {
+  text-align: left;
+  width: 45%;
+}
+.book-navigation .book-pager__item--center {
+  text-align: center;
+  width: 8%;
+}
+.book-navigation .book-pager__item--next {
+  float: right;
+  text-align: right;
+  width: 45%;
+}
 
 /* footer */
 .site-footer {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 .site-branding .site-title {
-  display: none; }
-  .site-branding .site-title a {
-    color: #593E1A; }
+  display: none;
+}
+.site-branding .site-title a {
+  color: #593E1A;
+}
 .site-branding .site-description {
-  display: none; }
+  display: none;
+}
 .site-branding .site-logo {
   width: 320px;
-  margin: -80px 0 0 0; }
-
+  margin: -80px 0 0 0;
+}
 .main-navigation .primary-menu li a {
-  text-decoration: underline; }
-  .main-navigation .primary-menu li a:hover, .main-navigation .primary-menu li a:active, .main-navigation .primary-menu li a:link, .main-navigation .primary-menu li a:visited {
-    color: #266A2E; }
-  .main-navigation .primary-menu li a .is-active {
-    color: #000; }
+  text-decoration: underline;
+}
+.main-navigation .primary-menu li a:hover, .main-navigation .primary-menu li a:active, .main-navigation .primary-menu li a:link, .main-navigation .primary-menu li a:visited {
+  color: #266A2E;
+}
+.main-navigation .primary-menu li a .is-active {
+  color: #000;
+}
 
 .menu-toggled .primary-menu li a {
-  text-decoration: underline; }
-  .menu-toggled .primary-menu li a:hover, .menu-toggled .primary-menu li a:active, .menu-toggled .primary-menu li a:link, .menu-toggled .primary-menu li a:visited {
-    color: #222; }
-  .menu-toggled .primary-menu li a .is-active {
-    color: #000; }
+  text-decoration: underline;
+}
+.menu-toggled .primary-menu li a:hover, .menu-toggled .primary-menu li a:active, .menu-toggled .primary-menu li a:link, .menu-toggled .primary-menu li a:visited {
+  color: #222;
+}
+.menu-toggled .primary-menu li a .is-active {
+  color: #000;
+}
 
 .body, .book-navigation {
-  clear: both; }
+  clear: both;
+}
 
 .button {
   margin: 0 0 1em 0;
@@ -117,10 +150,35 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 4px; }
-  .button a {
-    color: #FFF; }
-    .button a:link, .button a:visited, .button a:active, .button a:hover {
-      color: #FFF; }
+  border-radius: 4px;
+}
+.button a {
+  color: #FFF;
+}
+.button a:link, .button a:visited, .button a:active, .button a:hover {
+  color: #FFF;
+}
+
+.field__label {
+  font-weight: bold;
+}
+
+/**
+ * @file
+ * Visual styles for pager.
+ */
+.pager__items {
+  clear: both;
+  text-align: center;
+}
+
+.pager__item {
+  display: inline;
+  padding: 0.5em;
+}
+
+.pager__item.is-active {
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=sebas.css.map */
