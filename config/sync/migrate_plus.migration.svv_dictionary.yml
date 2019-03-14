@@ -22,15 +22,15 @@ source:
     -
       id: id
     -
-      changed: changed
+      changed: gewijzigd
     -
       letter: letter
     -
-      head_word: head_word
+      head_word: nederlands
     -
-      translation: translation
+      translation: veldens
     -
-      conjugation: conjugation
+      conjugation: vervoeging
 process:
   title: head_word
   field_head_word: head_word

@@ -185,4 +185,51 @@ body {
   width: 50%;
 }
 
+.word-list {
+  /* Style the form - display items horizontally */
+}
+.word-list .views-exposed-form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  /* Add some margins for each label */
+  /* Style the input fields */
+  /* Style the submit button */
+}
+.word-list .views-exposed-form label {
+  margin: 5px 10px 5px 0;
+}
+.word-list .views-exposed-form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.word-list .views-exposed-form input.form-text {
+  width: 70%;
+}
+.word-list .views-exposed-form .button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+.word-list .views-exposed-form .button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .views-exposed-form input {
+    margin: 10px 0;
+  }
+
+  .views-exposed-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 /*# sourceMappingURL=sebas.css.map */

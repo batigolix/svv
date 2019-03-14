@@ -211,3 +211,67 @@ body {
     width: 50%;
   }
 }
+
+
+
+.word-list {
+
+  /* Style the form - display items horizontally */
+  .views-exposed-form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 20px;
+
+    /* Add some margins for each label */
+    label {
+      margin: 5px 10px 5px 0;
+    }
+
+    /* Style the input fields */
+    input {
+      vertical-align: middle;
+      margin: 5px 10px 5px 0;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      &.form-text {
+        width: 70%;
+      }
+    }
+
+    /* Style the submit button */
+    .button {
+      padding: 10px 20px;
+      background-color: dodgerblue;
+      border: 1px solid #ddd;
+      color: white;
+      &:hover {
+        background-color: royalblue;
+      }
+
+    }
+
+
+  }
+}
+
+
+
+.views-exposed-form
+
+
+.views-exposed-form button:hover {
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .views-exposed-form input {
+    margin: 10px 0;
+  }
+
+  .views-exposed-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
