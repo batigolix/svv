@@ -47,7 +47,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Zoeken
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -319,7 +319,18 @@ display:
           separator: ''
           hide_empty: false
           default_field_elements: true
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<div class=\"dictionary-switch button\">\r\n  <a href=\"/woordenlijst/veldens-nederlands\">Veldes - Nederlands</a>\r\n</div>"
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       sorts: {  }
@@ -436,13 +447,13 @@ display:
       path: woordenlijst/nederlands-veldens
       menu:
         type: normal
-        title: 'Woordenlijst Nederlands - Veldens'
+        title: 'Digitaal woordenboek'
         description: ''
         expanded: false
         parent: ''
-        weight: 0
+        weight: -48
+        context: '0'
         menu_name: main
-        enabled: true
       display_extenders: {  }
       display_description: ''
     cache_metadata:

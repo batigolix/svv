@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_head_word
     - field.storage.node.field_translation
     - node.type.dictionary_entry
-    - system.menu.main
   module:
     - node
     - user
@@ -47,7 +46,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Zoeken
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -319,7 +318,18 @@ display:
           separator: ''
           hide_empty: false
           default_field_elements: true
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<div class=\"dictionary-switch\">\r\n  <a class=\"button\" href=\"/woordenlijst/nederlands-veldens\">Nederlands - Veldes</a>\r\n  <a class=\"button\" href=\"/woordenboek\">Woordenboek</a>\r\n</div>"
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       sorts: {  }
@@ -435,12 +445,12 @@ display:
         options: {  }
       path: woordenlijst/veldens-nederlands
       menu:
-        type: normal
+        type: tab
         title: 'Woordenlijst Veldens - Nederlands'
         description: ''
         expanded: false
         parent: ''
-        weight: 0
+        weight: -44
         context: '0'
         menu_name: main
       display_extenders: {  }
