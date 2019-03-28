@@ -105,11 +105,7 @@ AddEncoding gzip svgz
   # RewriteCond %{HTTP_HOST} .
   # RewriteCond %{HTTP_HOST} !^www\. [NC]
   # RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# rewrite veldense-volkscultuur.nl to www.veldense-volkscultuur.nl. but dont do this for local dev or staging domain names.
-RewriteCond %{HTTP_HOST} ^veldense-volkscultuur.nl$
-RewriteRule (.*) http://www.veldense-volkscultuur.nl/$1 [R=301,L]
-
+  #
   # To redirect all users to access the site WITHOUT the 'www.' prefix,
   # (http://www.example.com/foo will be redirected to http://example.com/foo)
   # uncomment the following:
@@ -131,9 +127,6 @@ RewriteRule (.*) http://www.veldense-volkscultuur.nl/$1 [R=301,L]
   RewriteCond %{REQUEST_URI} ^(.*)?/(rebuild.php)
   RewriteCond %{REQUEST_URI} !core
   RewriteRule ^ %1/core/%2 [L,QSA,R=301]
-
-  # Rewrite legacy folders for images
-  RewriteRule ^sites/veldense-volkscultuur\.nl/files/images/(.*)$ /legacy/images/$1 [R=301,NC,L]
 
   # Rewrite install.php during installation to see if mod_rewrite is working
   RewriteRule ^core/install.php core/install.php?rewrite=ok [QSA,L]
