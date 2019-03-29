@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - book
+    - system
   theme:
     - sebas
 id: booknavigation
@@ -18,4 +19,9 @@ settings:
   provider: book
   label_display: visible
   block_mode: 'all pages'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/woordenlijst\r\n/woordenlijst/*\r\n"
+    negate: true
+    context_mapping: {  }

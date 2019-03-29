@@ -48,8 +48,8 @@ display:
         type: basic
         options:
           submit_button: Zoeken
-          reset_button: false
-          reset_button_label: Reset
+          reset_button: true
+          reset_button_label: Wissen
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc

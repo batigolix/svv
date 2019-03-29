@@ -51,6 +51,12 @@
  */
 #}
 
+{% set classes = [
+  not page.sidebar_first ? 'no-sidebar',
+  'site-content',
+]
+%}
+
 <div id="page" class="site">
   <div class="site-inner">
     <a class="skip-link screen-reader-text" href="/#content">Skip to content</a>
@@ -63,7 +69,7 @@
     </header>
     <!-- .site-header -->
 
-    <div id="content" class="site-content">
+    <div id="content" {{ attributes.addClass(classes) }}>
 
       <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
