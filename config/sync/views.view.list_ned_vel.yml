@@ -329,7 +329,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<div class=\"dictionary-switch button\">\r\n  <a href=\"/woordenlijst/veldens-nederlands\">Veldes - Nederlands</a>\r\n</div>"
+          content: "<div class=\"dictionary-switch button\">\r\n  <a href=\"/woordenlijst/veldens-nederlands\">Veldes - Nederlands</a> \r\n  <a class=\"button\" href=\"/woordenlijst/uitleg\">Uitleg</a>\r\n</div>"
           plugin_id: text_custom
       footer: {  }
       empty: {  }
@@ -454,6 +454,7 @@ display:
         weight: -48
         context: '0'
         menu_name: main
+        enabled: true
       display_extenders: {  }
       display_description: ''
     cache_metadata:

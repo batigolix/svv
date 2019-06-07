@@ -328,7 +328,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<div class=\"dictionary-switch\">\r\n  <a class=\"button\" href=\"/woordenlijst/nederlands-veldens\">Nederlands - Veldes</a>\r\n  <a class=\"button\" href=\"/woordenboek\">Woordenboek</a>\r\n</div>"
+          content: "<div class=\"dictionary-switch\">\r\n  <a class=\"button\" href=\"/woordenlijst/nederlands-veldens\">Nederlands - Veldes</a> \r\n  <a class=\"button\" href=\"/woordenlijst/uitleg\">Uitleg</a>\r\n</div>"
           plugin_id: text_custom
       footer: {  }
       empty: {  }
