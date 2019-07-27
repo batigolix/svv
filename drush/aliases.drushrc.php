@@ -1,17 +1,9 @@
 <?php
 
-$aliases['dev'] = array(
-  'uri' => 'svv.test',
+$aliases['dev'] = [
+  'uri' => 'svv.docksal',
   'root' => '/var/www/web',
-  'path-aliases' => array(
+  'path-aliases' => [
     '%files' => 'sites/default/files',
-  ),
-);
-
-$aliases['acc'] = array(
-  'parent' => '@svv.stage',
-);
-
-$aliases['live'] = array(
-  'parent' => '@svv.live',
-);
+  ],
+];
