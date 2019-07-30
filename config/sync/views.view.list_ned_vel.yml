@@ -209,7 +209,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Vervoeging
+          label: 'Vervoeging en/of meer betekenissen'
           exclude: false
           alter:
             alter_text: false
