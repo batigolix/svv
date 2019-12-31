@@ -22,6 +22,8 @@ content:
     region: content
 hidden:
   field_conjugation: true
+  field_first_char_head_word: true
+  field_first_char_translation: true
   field_head_word: true
   field_translation: true
   langcode: true
