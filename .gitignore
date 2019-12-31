@@ -23,3 +23,5 @@ web/sites/simpletest
 *.css.map
 
 *.sql
+
+console
