@@ -58,7 +58,7 @@
         "mikey179/vfsStream": "~1.2",
         "phpunit/phpunit": "~4.8",
         "drupal/console": "~1.0",
-        "drupal/devel": "~1.0",
+        "drupal/devel": "^2.1",
         "drupal/config_devel": "~1.0",
         "drupal/migrate_example": "^4.1"
     },
