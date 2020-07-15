@@ -25,3 +25,9 @@ web/sites/simpletest
 *.sql
 
 console
+
+web/.htaccess
+web/sites/default/default.settings.php
+web/sites/example.settings.local.php
+
+
