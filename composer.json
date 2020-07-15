@@ -95,6 +95,17 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+       "drupal-scaffold": {
+          "excludes": [
+            "robots.txt",
+            ".htaccess",
+            "sites/development.services.yml"
+          ],
+          "initial": {
+            ".editorconfig": "../.editorconfig",
+            ".gitattributes": "../.gitattributes"
+          }
         }
     },
     "config": {
