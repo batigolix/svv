@@ -26,8 +26,8 @@ web/sites/simpletest
 
 console
 
-web/.htaccess
-web/sites/default/default.settings.php
-web/sites/example.settings.local.php
+#web/.htaccess
+#web/sites/default/default.settings.php
+#web/sites/example.settings.local.php
 
 

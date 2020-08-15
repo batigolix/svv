@@ -46,7 +46,7 @@
         "drupal/migrate_plus": "^4.1",
         "harvesthq/chosen": "^1.8",
         "drupal/chosen": "^2.6",
-        "drupal/core": "^8.8"
+        "drupal/core": "^8.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -98,7 +98,6 @@
        "drupal-scaffold": {
           "excludes": [
             "robots.txt",
-            ".htaccess",
             "sites/development.services.yml"
           ],
           "initial": {
