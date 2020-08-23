@@ -47,7 +47,8 @@
         "harvesthq/chosen": "^1.8",
         "drupal/chosen": "^2.6",
         "drupal/core": "^8.0",
-        "drupal/honeypot": "^2.0"
+        "drupal/honeypot": "^2.0",
+        "drush/drush": "^10.3"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -59,8 +60,7 @@
         "drupal/console": "~1.0",
         "drupal/devel": "^2.1",
         "drupal/config_devel": "~1.0",
-        "drupal/migrate_example": "^4.1",
-        "drush/drush": "^10.3"
+        "drupal/migrate_example": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"
