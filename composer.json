@@ -46,7 +46,8 @@
         "drupal/migrate_plus": "^4.1",
         "harvesthq/chosen": "^1.8",
         "drupal/chosen": "^2.6",
-        "drupal/core": "^8.0"
+        "drupal/core": "^8.0",
+        "drupal/honeypot": "^2.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",

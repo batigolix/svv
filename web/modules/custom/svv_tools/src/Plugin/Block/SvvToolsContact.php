@@ -21,7 +21,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class SvvToolsContact extends BlockBase {
 
-  protected $default_markup = '<p>Stichting Veldense Volkscultuur - Jan Verschurensingel 20, 5941 CK Velden, 077-4721586, h.derix@ziggo.nl</p>';
+  protected $default_markup = '<p>Stichting Veldense Volkscultuur - Jan Verschurensingel 20, 5941 CK Velden, 077-4721586, volkscultuur.velden@gmail.com</p>';
 
   /**
    * {@inheritdoc}

@@ -15,7 +15,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class ContactInfo extends BlockBase {
 
-  protected $default_markup = 'U kunt op verschillende manieren contact met ons opnemen.<h3>Adres</h3>Stichting Veldense Volkscultuur<br />Jan Verschurensingel 20<br />5941 CK Velden<h3>Telefoon</h3>077-4721586<h3>E-mail</h3>h.derix@ziggo.nl<h3>Contactformulier</h3>';
+  protected $default_markup = 'U kunt op verschillende manieren contact met ons opnemen.<h3>Adres</h3>Stichting Veldense Volkscultuur<br />Jan Verschurensingel 20<br />5941 CK Velden<h3>Telefoon</h3>077-4721586<h3>E-mail</h3>volkscultuur.velden@gmail.com<h3>Contactformulier</h3>';
 
   /**
    * {@inheritdoc}

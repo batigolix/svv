@@ -5,9 +5,30 @@
  * SVV tools primary module file.
  */
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * Implements hook_form_alter().
  */
 function svv_tools_form_contact_message_website_contact_form_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   $form['actions']['preview']['#access'] = FALSE;
+  $form['location'] = [
+    '#type' => 'textfield',
+    '#title' => t('In welke plaats is de Stichting Veldense Volkscultuur actief?'),
+    '#size' => 24,
+    '#description' => t('We stellen deze vraag als simpele controle dat dit formulier niet door een robot wordt ingevuld'),
+  ];
+  $form['#validate'][] = '_spam_validate';
 }
+
+/**
+ * Validates spam submission contact form.
+ */
+function _spam_validate(array &$form, FormStateInterface $form_state) {
+  $location_string = strtolower($form_state->getValue('location'));
+  $locations = ['velden', 'velde', 'venlo', 'lomm', 'vellde', 'veldde'];
+  if (!in_array($location_string, $locations)) {
+    $form_state->setErrorByName('location', t('Het antwoord is niet juist. Om te controleren of u geen spamrobot bent, vragen we om in te vullen in welke plaats de stichting actief is. Als het niet lukt, stuur dan een email naar volkscultuur.velden@gmail.com'));
+  }
+}
+
