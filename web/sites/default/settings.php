@@ -751,6 +751,8 @@ $settings['trusted_host_patterns'] = array(
   '^\.veldense-volkscultuur\.nl$',
 );
 
+$settings["file_temp_path"] = "sites/default/files/temp";
+
 /**
  * Load local development override configuration, if available.
  *
