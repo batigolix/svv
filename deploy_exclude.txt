@@ -1,17 +1,11 @@
-aliases.drushrc.php
-#bin/
 config_dev/
-configure-env.sh
-#drush/
 .git/
 .gitignore
 phpunit.xml.dist
 scripts/
 todo.txt
 .travis.yml
-#vendor/
 web/.csslintrc
-#web/drush
 web/.editorconfig
 web/.eslintignore
 web/.eslintrc
