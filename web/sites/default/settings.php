@@ -742,8 +742,7 @@ $settings['file_scan_ignore_directories'] = [
 
 $settings['hash_salt'] = 'jX5wvXqmIXNhxNG8rmWydAgdHJ9G9TMK6_kweqEnqJe8kWq7CVfe8IDYvRJqfFTPRzFtg2SOhA';
 
-#$settings['install_profile'] = 'standard';
-$config_directories['sync'] = '../config/sync';
+$settings["config_sync_directory"] = '../config/sync';
 
 $settings['trusted_host_patterns'] = array(
   '^www\.veldense-volkscultuur\.nl$',
