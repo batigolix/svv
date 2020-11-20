@@ -1,7 +1,7 @@
 name: 'svv_dictionary'
 type: module
 description: 'SVV Dictionary'
-core: 8.x
+core_version_requirement: ^8.8.0 || ^9.0
 package: 'Custom'
 dependencies:
   - migrate_tools
