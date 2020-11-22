@@ -124,6 +124,7 @@
         }
     },
     "require-dev": {
+        "drupal/devel": "^4.0",
         "palantirnet/drupal-rector": "^0.5.6"
     }
 }
