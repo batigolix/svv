@@ -1,0 +1,27 @@
+uuid: 05ebad27-0937-488b-a815-1489670c18aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+    - system
+  theme:
+    - arcana
+id: arcana_booknavigation
+theme: arcana
+region: sidebar_first
+weight: -4
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: Inhoud
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/woordenlijst\r\n/woordenlijst/*\r\n"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,20 @@
+uuid: 4f9d8713-8cc3-4700-936f-d043074605e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arcana
+id: arcana_mainpagecontent
+theme: arcana
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

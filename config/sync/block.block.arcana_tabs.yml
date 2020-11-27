@@ -1,0 +1,20 @@
+uuid: 22b61a8d-c6ca-44b6-bf8d-404e4a5978d3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - arcana
+id: arcana_tabs
+theme: arcana
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

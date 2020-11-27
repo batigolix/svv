@@ -1,0 +1,20 @@
+uuid: d300b956-b6fe-45b7-8b9e-336ba51a0e01
+langcode: nl
+status: true
+dependencies:
+  module:
+    - svv_tools
+  theme:
+    - arcana
+id: arcana_svvtoolsgoogleanalytics
+theme: arcana
+region: footer
+weight: -6
+provider: null
+plugin: ga
+settings:
+  id: ga
+  label: 'SVV tools: Google analytics'
+  provider: svv_tools
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 0fa810c5-323a-497a-8b55-96e573c515ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arcana
+id: arcana_messages
+theme: arcana
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

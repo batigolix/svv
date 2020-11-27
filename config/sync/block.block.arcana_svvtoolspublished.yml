@@ -1,0 +1,20 @@
+uuid: 0bc401ff-e1f2-46ac-9794-7b675c1bf735
+langcode: en
+status: false
+dependencies:
+  module:
+    - svv_tools
+  theme:
+    - arcana
+id: arcana_svvtoolspublished
+theme: arcana
+region: header
+weight: -1
+provider: null
+plugin: published
+settings:
+  id: published
+  label: 'SVV tools: Published'
+  provider: svv_tools
+  label_display: '0'
+visibility: {  }

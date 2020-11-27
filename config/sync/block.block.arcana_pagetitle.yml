@@ -1,0 +1,18 @@
+uuid: cc1a0ed3-3f07-459b-a1a3-47a86021cc00
+langcode: en
+status: true
+dependencies:
+  theme:
+    - arcana
+id: arcana_pagetitle
+theme: arcana
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

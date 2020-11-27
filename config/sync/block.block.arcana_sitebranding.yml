@@ -1,0 +1,23 @@
+uuid: aa22dd52-0a13-4e57-9e66-5d0ecb3df9d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arcana
+id: arcana_sitebranding
+theme: arcana
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
