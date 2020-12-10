@@ -1,6 +1,6 @@
 name: 'Flood control'
-description: 'Interface for hidden flood control options.'
-configure: flood_control_settings
+description: "Allows configuring hidden flood control options and unblocking IP addresses and user ID's that are blocked after multiple failed login attempts."
+configure: flood_control.settings
 package: 'Administration'
 type: module
 core_version_requirement: ^8 || ^9
