@@ -207,13 +207,6 @@ class FloodUnblockAdminForm extends FormBase {
   }
 
   /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    parent::validateForm($form, $form_state);
-  }
-
-  /**
    * Validates that items have been selected for removal.
    */
   public function validateRemoveItems(array &$form, FormStateInterface $form_state) {

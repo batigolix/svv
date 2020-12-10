@@ -10,14 +10,14 @@ interface FloodUnblockManagerInterface {
   /**
    * Gets the user link or location string for an identifier.
    *
-   * @param string $identifiers
+   * @param string $results
    *   An array containing the identifiers from the flood table.
    *
    * @return array
    *   List of identifiers, keyed by the original identifier, containing
    *   user link or location string or just the unchanged identifier.
    */
-  public function fetchIdentifiers($fid);
+  public function fetchIdentifiers($results);
 
   /**
    * Removes rows from flood table.

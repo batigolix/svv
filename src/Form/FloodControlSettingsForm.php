@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\flood_control\Form\FloodControlSettingsForm.
- */
-
 namespace Drupal\flood_control\Form;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -26,23 +21,18 @@ class FloodControlSettingsForm extends ConfigFormBase {
   protected $dateFormatter;
 
   /**
-   * {@inheritdoc}
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
-  public function getFormID() {
-    return 'flood_control_settings_form';
-  }
+  protected $configFactory;
 
   /**
    * {@inheritdoc}
    */
-  protected function getEditableConfigNames() {
-    return ['user.flood'];
-  }
-
   public function __construct(ConfigFactoryInterface $config_factory, DateFormatterInterface $dateFormatter) {
-    parent::__construct($config_factory);
-
     $this->dateFormatter = $dateFormatter;
+    $this->configFactory = $config_factory;
   }
 
   /**
@@ -58,8 +48,22 @@ class FloodControlSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
+  public function getFormId() {
+    return 'flood_control_settings_form';
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getEditableConfigNames() {
+    return ['user.flood'];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $flood_config = \Drupal::config('user.flood');
+    $flood_config = $this->config('user.flood');
     $flood_settings = $flood_config->get();
 
     $options = $this->getOptions();
@@ -69,62 +73,62 @@ class FloodControlSettingsForm extends ConfigFormBase {
     // User module flood events.
     $form['login'] = [
       '#type' => 'fieldset',
-      '#title' => t('Login'),
+      '#title' => $this->t('Login'),
     ];
 
     $form['login']['ip_limit'] = [
       '#type' => 'select',
-      '#title' => t('Failed login (IP) limit'),
+      '#title' => $this->t('Failed login (IP) limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $flood_settings['ip_limit'],
     ];
 
     $form['login']['ip_window'] = [
       '#type' => 'select',
-      '#title' => t('Failed login (IP) window'),
-      '#options' => [0 => t('None (disabled)')] + array_map([
-          $this->dateFormatter,
-          'formatInterval',
-        ], array_combine($timeOptions, $timeOptions)),
+      '#title' => $this->t('Failed login (IP) window'),
+      '#options' => [0 => $this->t('None (disabled)')] + array_map([
+        $this->dateFormatter,
+        'formatInterval',
+      ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $flood_settings['ip_window'],
     ];
     $form['login']['user_limit'] = [
       '#type' => 'select',
-      '#title' => t('Failed login (username) limit'),
+      '#title' => $this->t('Failed login (username) limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $flood_settings['user_limit'],
     ];
     $form['login']['user_window'] = [
       '#type' => 'select',
-      '#title' => t('Failed login (username) window'),
-      '#options' => [0 => t('None (disabled)')] + array_map([
-          $this->dateFormatter,
-          'formatInterval',
-        ], array_combine($timeOptions, $timeOptions)),
+      '#title' => $this->t('Failed login (username) window'),
+      '#options' => [0 => $this->t('None (disabled)')] + array_map([
+        $this->dateFormatter,
+        'formatInterval',
+      ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $flood_settings['user_window'],
     ];
 
     // Contact module flood events.
-    $contact_config = \Drupal::config('contact.settings');
+    $contact_config = $this->config('contact.settings');
     $contact_settings = $contact_config->get();
     $form['contact'] = [
       '#type' => 'fieldset',
-      '#title' => t('Contact forms'),
+      '#title' => $this->t('Contact forms'),
     ];
 
     $form['contact']['contact_threshold_limit'] = [
       '#type' => 'select',
-      '#title' => t('Sending e-mails limit'),
+      '#title' => $this->t('Sending e-mails limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $contact_settings['flood']['limit'],
     ];
     $form['contact']['contact_threshold_window'] = [
       '#type' => 'select',
-      '#title' => t('Sending e-mails window'),
-      '#options' => [0 => t('None (disabled)')] + array_map([
-          $this->dateFormatter,
-          'formatInterval',
-        ], array_combine($timeOptions, $timeOptions)),
+      '#title' => $this->t('Sending e-mails window'),
+      '#options' => [0 => $this->t('None (disabled)')] + array_map([
+        $this->dateFormatter,
+        'formatInterval',
+      ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $contact_settings['flood']['interval'],
     ];
 
@@ -134,17 +138,9 @@ class FloodControlSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-
-    parent::validateForm($form, $form_state);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
 
-    $flood_config = \Drupal::configFactory()->getEditable('user.flood');
+    $flood_config = $this->configFactory->getEditable('user.flood');
     $flood_config
       ->set('ip_limit', $form_state->getValue('ip_limit'))
       ->set('ip_window', $form_state->getValue('ip_window'))
@@ -152,7 +148,7 @@ class FloodControlSettingsForm extends ConfigFormBase {
       ->set('user_window', $form_state->getValue('user_window'))
       ->save();
 
-    $contact_config = \Drupal::configFactory()->getEditable('contact.settings');
+    $contact_config = $this->configFactory->getEditable('contact.settings');
     $contact_config
       ->set('flood.limit', $form_state->getValue('contact_threshold_limit'))
       ->set('flood.interval', $form_state->getValue('contact_threshold_window'))
@@ -161,6 +157,9 @@ class FloodControlSettingsForm extends ConfigFormBase {
     parent::submitForm($form, $form_state);
   }
 
+  /**
+   * Provides options for the select lists.
+   */
   protected function getOptions() {
     return [
       'counter' => [

@@ -10,7 +10,7 @@ use Drupal\Core\Messenger\MessengerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 
 /**
- * Class FloodUnblockManager.
+ * Provides Flood Unblock actions.
  */
 class FloodUnblockManager implements FloodUnblockManagerInterface {
 
