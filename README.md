@@ -23,7 +23,7 @@ administrators to remove IP addresses and user ID's from the flood table.
 
 You need _access flood unblock_ permissions to access the _Flood Unblock_ page.
 
-###Steps
+### Steps
 * In the _Manage_ administrative menu, navigate to _People_ (/admin/people)
 * Click the tab _Flood Unblock_ . The Flood Unblock page appears
 * Select (all) the IP addresses and User ID's that you want to unblock
