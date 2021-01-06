@@ -6,6 +6,7 @@ use Drupal\Core\Database\Connection;
 use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\flood_control\FloodUnblockManager;
 
@@ -82,7 +83,7 @@ class FloodUnblockAdminForm extends FormBase {
 
     // Provides introduction to the table.
     $form['top_markup'] = [
-      '#markup' => $this->t("<p>List of IP addresses and user ID's that are blocked after multiple failed login attempts. You can remove separate entries.</p>"),
+      '#markup' => $this->t("<p>List of IP addresses and user ID's that are blocked after multiple failed login attempts. You can remove separate entries. You can configure the login attempt limits and time windows on the <a href=':url'>Flood Control settings page</a>.</p>", [':url' => Url::fromRoute('flood_control.settings')->toString()]),
     ];
 
     // Provides table filters.

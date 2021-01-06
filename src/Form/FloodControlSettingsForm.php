@@ -7,6 +7,7 @@ use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Url;
 
 /**
  * Administration settings form.
@@ -76,36 +77,44 @@ class FloodControlSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Login'),
     ];
 
+    $form['login']['intro'] = [
+      '#markup' => $this->t('The website blocks login attempts when the limit within a particular time window has been reached. The website records both attempts from IP addresses and usernames. When the limit is reached the user login form cannot be used anymore. You can remove blocked usernames and IP address from the <a href=":url">Flood Unblock page</a>.', [':url' => Url::fromRoute('flood_control.unblock_form')->toString()]),
+    ];
+
     $form['login']['ip_limit'] = [
       '#type' => 'select',
-      '#title' => $this->t('Failed login (IP) limit'),
+      '#title' => $this->t('IP login limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $flood_settings['ip_limit'],
+      '#description' => $this->t('The allowed number of failed login attempts from one IP address within the allowed time window.'),
     ];
 
     $form['login']['ip_window'] = [
       '#type' => 'select',
-      '#title' => $this->t('Failed login (IP) window'),
+      '#title' => $this->t('IP time window'),
       '#options' => [0 => $this->t('None (disabled)')] + array_map([
         $this->dateFormatter,
         'formatInterval',
       ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $flood_settings['ip_window'],
+      '#description' => $this->t('The allowed time window for failed IP logins.'),
     ];
     $form['login']['user_limit'] = [
       '#type' => 'select',
-      '#title' => $this->t('Failed login (username) limit'),
+      '#title' => $this->t('Username login limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $flood_settings['user_limit'],
+      '#description' => $this->t('The allowed number of failed login attempts with one username within the allowed time window.'),
     ];
     $form['login']['user_window'] = [
       '#type' => 'select',
-      '#title' => $this->t('Failed login (username) window'),
+      '#title' => $this->t('Username login time window'),
       '#options' => [0 => $this->t('None (disabled)')] + array_map([
         $this->dateFormatter,
         'formatInterval',
       ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $flood_settings['user_window'],
+      '#description' => $this->t('The allowed time window for failed username logins.'),
     ];
 
     // Contact module flood events.
@@ -115,12 +124,15 @@ class FloodControlSettingsForm extends ConfigFormBase {
       '#type' => 'fieldset',
       '#title' => $this->t('Contact forms'),
     ];
-
+    $form['contact']['intro'] = [
+      '#markup' => $this->t('The website blocks contact form submissions when the limit within a particular time window has been reached.'),
+    ];
     $form['contact']['contact_threshold_limit'] = [
       '#type' => 'select',
       '#title' => $this->t('Sending e-mails limit'),
       '#options' => array_combine($counterOptions, $counterOptions),
       '#default_value' => $contact_settings['flood']['limit'],
+      '#description' => $this->t('The allowed number of submissions within the allowed time window.'),
     ];
     $form['contact']['contact_threshold_window'] = [
       '#type' => 'select',
@@ -130,6 +142,7 @@ class FloodControlSettingsForm extends ConfigFormBase {
         'formatInterval',
       ], array_combine($timeOptions, $timeOptions)),
       '#default_value' => $contact_settings['flood']['interval'],
+      '#description' => $this->t('The allowed time window for contact form submissions.'),
     ];
 
     return parent::buildForm($form, $form_state);
