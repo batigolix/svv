@@ -1,0 +1,18 @@
+# Main theme library.
+global:
+  js:
+    assets/js/jquery.dropotron.min.js: {}
+    assets/js/browser.min.js: {}
+    assets/js/breakpoints.min.js: {}
+    assets/js/util.js: {}
+    assets/js/main.js: {}
+  dependencies:
+    - core/jquery
+  css:
+    base:
+      assets/css/main.css: {}
+custom:
+  version: 0.0.0.1
+  css:
+    theme:
+      custom.css: { weight: 2000 }
