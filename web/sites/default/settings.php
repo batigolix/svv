@@ -762,7 +762,17 @@ $settings["file_temp_path"] = "sites/default/files/temp";
  *
  * Keep this code block at the end of this file to take full effect.
  */
+
 if (file_exists(__DIR__ . '/settings.local.php')) {
-   include __DIR__ . '/settings.local.php';
+  include __DIR__ . '/settings.local.php';
 }
 
+if (strpos(DRUPAL_ROOT, 'production')) {
+  include '/home/doesborg/public_html/svv-project/settings/live.php';
+}
+
+if (strpos(DRUPAL_ROOT, 'stage')) {
+  include '/home/doesborg/public_html/svv-project/settings/stage.php';
+}
+
+$settings["config_sync_directory"] = '../config/sync';
