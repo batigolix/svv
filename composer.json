@@ -16,7 +16,6 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^2.4",
         "drupal/chosen": "^3.0",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_split": "^1.7",
@@ -124,6 +123,7 @@
         }
     },
     "require-dev": {
+        "drupal/admin_toolbar": "^3.0",
         "drupal/config_devel": "^1.8",
         "drupal/devel": "^4.0",
         "palantirnet/drupal-rector": "^0.5.6"
