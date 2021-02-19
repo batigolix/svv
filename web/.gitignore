@@ -1,3 +1,10 @@
 /INSTALL.txt
 /README.txt
 /example.gitignore
+/update.php
+/.csslintrc
+/.eslintignore
+/.eslintrc.json
+/.ht.router.php
+/autoload.php
+/index.php
