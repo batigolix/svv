@@ -57,6 +57,9 @@ jobs:
             cd ${{ secrets.STAGE_DIR }}
             chmod a+w web/sites/default
             chmod a+w web/sites/default/settings.php
+            git add * 
+            git stash
+            git pull
             git fetch --all
             git reset --hard
             git checkout develop
