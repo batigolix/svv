@@ -9,8 +9,14 @@ allow_single_deselect: false
 placeholder_text_multiple: 'Choose some options'
 placeholder_text_single: 'Choose an option'
 no_results_text: 'No results match'
-disabled_themes: {  }
+disabled_themes:
+  claro: '0'
+  seven: '0'
+  arcana: '0'
+  sebas: '0'
 chosen_include: 2
 _core:
   default_config_hash: JUHKHJeHl1bWXY41HMIcDR-VmAWvJ4OJycDubCkIeDU
 langcode: nl
+max_shown_results: null
+use_relative_width: false

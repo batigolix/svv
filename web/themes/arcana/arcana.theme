@@ -25,3 +25,19 @@ function arcana_preprocess_page(&$variables) {
 function arcana_preprocess_node(&$variables) {
 
 }
+
+/**
+ *
+ */
+function arcana_preprocess_block(&$variables) {
+
+  if ($variables['plugin_id'] === 'system_branding_block') {
+
+    if (\Drupal::service('path.matcher')->isFrontPage()) {
+      $test = 1;
+      $variables['is_front'] = TRUE;
+    }
+
+  }
+
+}
