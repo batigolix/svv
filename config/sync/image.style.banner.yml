@@ -1,0 +1,15 @@
+uuid: 0cdc3ebb-1ab2-49cd-992f-d72fd97da4fc
+langcode: nl
+status: true
+dependencies: {  }
+name: banner
+label: 'Banner (773x288)'
+effects:
+  2bb6d154-52e4-4bfa-87a5-82e13990c79e:
+    uuid: 2bb6d154-52e4-4bfa-87a5-82e13990c79e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 773
+      height: 288
+      anchor: center-center
