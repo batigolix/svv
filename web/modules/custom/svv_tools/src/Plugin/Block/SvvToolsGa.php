@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\svv_tools\Plugin\Block\SvvToolsGa.
- */
-
 namespace Drupal\svv_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -24,8 +19,9 @@ class SvvToolsGa extends BlockBase {
    * Implements \Drupal\Core\Block\BlockBase::blockBuild().
    */
   public function build() {
-    $build = array();
+    $build = [];
     $build['#attached']['library'][] = 'svv_tools/ga';
     return $build;
   }
+
 }

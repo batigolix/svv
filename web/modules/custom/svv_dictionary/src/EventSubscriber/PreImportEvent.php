@@ -6,7 +6,7 @@ use Drupal\migrate\Event\MigrateEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class PreImportEvent
+ * Class PreImportEvent.
  *
  * @package Drupal\svv_dictionary\EventSubscriber
  */
@@ -34,4 +34,5 @@ class PreImportEvent implements EventSubscriberInterface {
     $url = $config->get('url_to_google_docs_csv_file');
     $result = system_retrieve_file($url, 'public://svv_dictionary/dictionary.csv', FALSE, FILE_EXISTS_REPLACE);
   }
+
 }

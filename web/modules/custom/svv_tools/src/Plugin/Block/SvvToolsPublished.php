@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\svv_tools\Plugin\Block\SvvToolsPublished.
- */
-
 namespace Drupal\svv_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -30,13 +25,14 @@ class SvvToolsPublished extends BlockBase {
       $author_name = $author->getUserName();
       $update = \Drupal::service('date.formatter')
         ->format($node->getRevisionCreationTime());
-      $message = t('Last updated on @date by @author', array(
+      $message = t('Last updated on @date by @author', [
         '@date' => $update,
         '@author' => $author_name,
-      ));
-      $build = array();
+      ]);
+      $build = [];
       $build['#markup'] = $message;
       return $build;
     }
   }
+
 }
