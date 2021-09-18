@@ -25,7 +25,7 @@ use Drupal\migrate\Row;
  *   id = "first_character"
  * )
  */
-class firstCharacter extends ProcessPluginBase {
+class FirstCharacter extends ProcessPluginBase {
 
   /**
    * {@inheritdoc}
