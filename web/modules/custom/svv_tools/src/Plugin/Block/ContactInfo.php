@@ -21,28 +21,28 @@ class ContactInfo extends BlockBase {
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return array(
+    return [
       'label' => t("Contact info"),
       'contact_info_markup_string' => $this->default_markup,
-      'cache' => array(
+      'cache' => [
         'max_age' => 3600,
-        'contexts' => array(
+        'contexts' => [
           'cache_context.user.roles',
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
   /**
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $form['contact_info_markup_string_text'] = array(
+    $form['contact_info_markup_string_text'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Contact info markup'),
       '#description' => $this->t('This text will appear in the contact info.'),
       '#default_value' => $this->configuration['contact_info_markup_string'],
-    );
+    ];
     return $form;
   }
 
@@ -58,10 +58,10 @@ class ContactInfo extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#type' => 'markup',
       '#markup' => $this->configuration['contact_info_markup_string'],
-    );
+    ];
   }
 
 }

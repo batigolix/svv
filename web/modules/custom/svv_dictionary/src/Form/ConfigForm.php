@@ -6,7 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class ConfigForm.
+ * Configuration form for svv dictionary.
  */
 class ConfigForm extends ConfigFormBase {
 
@@ -38,13 +38,6 @@ class ConfigForm extends ConfigFormBase {
       '#default_value' => $config->get('url_to_google_docs_csv_file'),
     ];
     return parent::buildForm($form, $form_state);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    parent::validateForm($form, $form_state);
   }
 
   /**

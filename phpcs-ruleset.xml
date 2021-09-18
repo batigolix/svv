@@ -27,7 +27,8 @@
     <exclude-pattern>themes/custom/*/js/inherited</exclude-pattern>-->
     <exclude-pattern>themes/custom/*/node_modules</exclude-pattern>
     <exclude-pattern>modules/custom/doesdesign_tools/responsiveslides/demo/demo.css</exclude-pattern>
-  <exclude-pattern>themes/arcana/assets</exclude-pattern>
+    <exclude-pattern>themes/arcana/assets/css</exclude-pattern>
+    <exclude-pattern>themes/arcana/assets/js</exclude-pattern>
     <exclude-pattern>themes/arcana/html5up-arcana</exclude-pattern>
     <exclude-pattern>themes/earthen</exclude-pattern>
     <exclude-pattern>themes/sebas</exclude-pattern>

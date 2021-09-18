@@ -9,7 +9,7 @@ dependencies:
 id: arcana_svvtoolspublished
 theme: arcana
 region: header
-weight: -1
+weight: -3
 provider: null
 plugin: published
 settings:

@@ -1,0 +1,10 @@
+<header>
+{{ title_prefix }}
+{% if title %}
+  <h2{{ title_attributes }}>{{ title }}</h2>
+  {% if sub_title %}
+    <p>{{ sub_title }}</p>
+    {% endif %}
+{% endif %}
+{{ title_suffix }}
+</header>

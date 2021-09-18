@@ -25,7 +25,8 @@ use Drupal\migrate\Row;
  *   id = "first_character"
  * )
  */
-class firstCharacter extends ProcessPluginBase {
+class FirstCharacter extends ProcessPluginBase {
+
   /**
    * {@inheritdoc}
    */
@@ -37,6 +38,7 @@ class firstCharacter extends ProcessPluginBase {
         return $value[0];
       }
     }
-    return null;
+    return NULL;
   }
+
 }

@@ -8,8 +8,8 @@ dependencies:
     - arcana
 id: arcana_svvtoolsmisc
 theme: arcana
-region: header
-weight: -5
+region: content
+weight: 0
 provider: null
 plugin: misc
 settings:

@@ -1,14 +1,10 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\svv_tools\Plugin\Block\SvvToolsMisc.
- */
-
 namespace Drupal\svv_tools\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-//use Drupal\node\Entity\Node;
+
+// Use Drupal\node\Entity\Node;.
 
 /**
  * Provides a Google analytics block.
@@ -25,8 +21,9 @@ class SvvToolsMisc extends BlockBase {
    * Implements \Drupal\Core\Block\BlockBase::blockBuild().
    */
   public function build() {
-    $build = array();
+    $build = [];
     $build['#markup'] = $this->t('Hello, World!');
     return $build;
   }
+
 }
