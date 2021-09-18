@@ -32,12 +32,22 @@ function arcana_preprocess_node(&$variables) {
 function arcana_preprocess_block(&$variables) {
 
   if ($variables['plugin_id'] === 'system_branding_block') {
-
     if (\Drupal::service('path.matcher')->isFrontPage()) {
-      $test = 1;
       $variables['is_front'] = TRUE;
     }
-
   }
 
+}
+
+/**
+ * Preprocess page title.
+ */
+function arcana_preprocess_page_title(&$variables) {
+  $node = \Drupal::request()->attributes->get('node');
+  if (!is_null($node)) {
+    $sub_title = $node->get('field_subtitle')->value;
+    if (!is_null($sub_title)) {
+      $variables['sub_title']['#markup'] = $sub_title;
+    }
+  }
 }
