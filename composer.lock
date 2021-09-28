@@ -348,16 +348,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "101c7dd0388259cfbba41b705b9255d2b1976bbf"
+                "reference": "bf1503225f1cfb372884c71b83763b60a40c875a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/101c7dd0388259cfbba41b705b9255d2b1976bbf",
-                "reference": "101c7dd0388259cfbba41b705b9255d2b1976bbf",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/bf1503225f1cfb372884c71b83763b60a40c875a",
+                "reference": "bf1503225f1cfb372884c71b83763b60a40c875a",
                 "shasum": ""
             },
             "require": {
@@ -397,9 +397,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.3.2"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.3.3"
             },
-            "time": "2021-09-19T14:35:36+00:00"
+            "time": "2021-09-27T00:56:55+00:00"
         },
         {
             "name": "consolidation/config",
@@ -2389,27 +2389,27 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha36",
+            "version": "3.0.0-alpha37",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha36"
+                "reference": "8.x-3.0-alpha37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha36.zip",
-                "reference": "8.x-3.0-alpha36",
-                "shasum": "e0a412e12b000d92e1200c825abaf8ba33df9396"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha37.zip",
+                "reference": "8.x-3.0-alpha37",
+                "shasum": "56f7226618f7e45697ee799e5e02c57d79cb3b1a"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha36",
-                    "datestamp": "1625232245",
+                    "version": "8.x-3.0-alpha37",
+                    "datestamp": "1632767973",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
