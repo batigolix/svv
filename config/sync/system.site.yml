@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: nl
 uuid: 28046dca-0179-41cd-ae6c-ce47239c30eb
 name: 'Stichting Veldense volkscultuur'
 mail: mdoesborg@gmail.com
@@ -8,7 +11,4 @@ page:
   front: /node/30
 admin_compact_mode: false
 weight_select_max: 100
-langcode: nl
 default_langcode: nl
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

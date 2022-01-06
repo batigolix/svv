@@ -20,26 +20,26 @@ bundle: book
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_banner:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: banner
       image_link: ''
+      image_style: banner
     third_party_settings: {  }
-  links:
-    weight: 2
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   field_subtitle: true
   langcode: true

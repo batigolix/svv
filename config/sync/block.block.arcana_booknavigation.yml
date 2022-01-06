@@ -16,12 +16,12 @@ plugin: book_navigation
 settings:
   id: book_navigation
   label: Inhoud
-  provider: book
   label_display: visible
+  provider: book
   block_mode: 'all pages'
 visibility:
   request_path:
     id: request_path
-    pages: "/woordenlijst\r\n/woordenlijst/*\r\n"
     negate: true
     context_mapping: {  }
+    pages: "/woordenlijst\r\n/woordenlijst/*\r\n"

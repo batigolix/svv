@@ -11,11 +11,11 @@ mode: default
 content:
   message:
     type: string
-    weight: 0
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true

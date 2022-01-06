@@ -15,6 +15,6 @@ plugin: ga
 settings:
   id: ga
   label: 'SVV tools: Google analytics'
-  provider: svv_tools
   label_display: '0'
+  provider: svv_tools
 visibility: {  }

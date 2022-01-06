@@ -11,13 +11,13 @@ pattern: '[node:title]'
 selection_criteria:
   e7c3f95c-61a9-477b-9cc0-9c120a18a208:
     id: node_type
+    negate: false
+    uuid: e7c3f95c-61a9-477b-9cc0-9c120a18a208
+    context_mapping:
+      node: node
     bundles:
       book: book
       page: page
-    negate: false
-    context_mapping:
-      node: node
-    uuid: e7c3f95c-61a9-477b-9cc0-9c120a18a208
 selection_logic: and
 weight: -5
 relationships: {  }

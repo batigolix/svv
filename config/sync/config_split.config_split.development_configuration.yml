@@ -5,13 +5,13 @@ dependencies: {  }
 id: development_configuration
 label: 'Development configuration'
 description: ''
+weight: null
+stackable: false
+storage: null
 folder: ../config_dev
 module:
   config_devel: 0
   devel: 0
 theme: {  }
-blacklist: {  }
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
-weight: null
+complete_list: {  }
+partial_list: {  }

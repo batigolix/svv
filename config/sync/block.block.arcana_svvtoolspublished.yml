@@ -15,6 +15,6 @@ plugin: published
 settings:
   id: published
   label: 'SVV tools: Published'
-  provider: svv_tools
   label_display: '0'
+  provider: svv_tools
 visibility: {  }
