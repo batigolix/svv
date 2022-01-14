@@ -7,11 +7,11 @@ label: 'Development configuration'
 description: ''
 weight: null
 stackable: false
-storage: null
+storage: folder
 folder: ../config_dev
 module:
-  config_devel: 0
   devel: 0
+  stage_file_proxy: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }

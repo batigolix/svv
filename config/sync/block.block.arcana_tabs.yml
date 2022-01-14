@@ -1,13 +1,13 @@
 uuid: 22b61a8d-c6ca-44b6-bf8d-404e4a5978d3
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - arcana
 id: arcana_tabs
 theme: arcana
-region: header
-weight: -2
+region: content
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

@@ -9,7 +9,7 @@ dependencies:
 id: arcana_mainpagecontent
 theme: arcana
 region: content
-weight: -1
+weight: 1
 provider: null
 plugin: system_main_block
 settings:
