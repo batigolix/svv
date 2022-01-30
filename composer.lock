@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3905a44523ffbd32525ec2c7e29bec8f",
+    "content-hash": "0de06debf54b09c26001fb648f210d1d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1433,6 +1433,53 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/betterlt",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/betterlt.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/betterlt-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "abe89da16716069147f9090e9e813c4c6b46d7f8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1634749790",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                },
+                {
+                    "name": "mcvjoyner",
+                    "homepage": "https://www.drupal.org/user/3199269"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/betterlt",
+            "support": {
+                "source": "https://git.drupalcode.org/project/betterlt"
             }
         },
         {

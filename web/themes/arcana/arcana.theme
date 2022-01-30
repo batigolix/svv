@@ -28,3 +28,16 @@ function arcana_preprocess_page_title(&$variables) {
     }
   }
 }
+
+function arcana_preprocess_node(&$variables){
+
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $variables['is_front'] = TRUE;
+    unset($variables['content']['book_navigation']);
+    unset($variables['content']['links']);
+
+  }
+
+
+
+}
