@@ -1,0 +1,11 @@
+uuid: c3ca5ace-8f0c-4e85-a591-554394f969eb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+id: banner
+title: banner
+content:
+  value: "\r\n<h2><em>Stichting voor de ontplooïng van</em> volksculturele initiatieven</h2>\r\n\r\n<p><a href=\"/over-ons\">Lees verder</a></p>\r\n"
+  format: advanced_html

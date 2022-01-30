@@ -1,0 +1,11 @@
+uuid: f4fadb8d-950c-4431-b26f-da29912210a3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+id: adres
+title: Adres
+content:
+  value: "<ul>\r\n\t<li>Stichting Veldense Volkscultuur</li>\r\n\t<li>Jan Verschurensingel 20</li>\r\n\t<li>5941 CK Velden</li>\r\n</ul>\r\n"
+  format: advanced_html

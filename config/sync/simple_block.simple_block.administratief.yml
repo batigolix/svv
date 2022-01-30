@@ -1,0 +1,11 @@
+uuid: d412af23-fc65-492b-bc9e-c40065d5e98b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+id: administratief
+title: Administratief
+content:
+  value: "<ul>\r\n\t<li>BTW nummer : NL 814096335</li>\r\n\t<li>Kvk nummer : 12055870</li>\r\n\t<li>ANBI nummer : 79628</li>\r\n</ul>\r\n"
+  format: advanced_html
