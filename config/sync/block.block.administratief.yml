@@ -1,0 +1,22 @@
+uuid: ee811679-d16b-46c4-8fb5-9f384fe5f930
+langcode: nl
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.administratief
+  module:
+    - simple_block
+  theme:
+    - arcana
+id: administratief
+theme: arcana
+region: footer3
+weight: -5
+provider: null
+plugin: 'simple_block:administratief'
+settings:
+  id: 'simple_block:administratief'
+  label: Administratief
+  label_display: visible
+  provider: simple_block
+visibility: {  }
