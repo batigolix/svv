@@ -2189,6 +2189,9 @@ img.align-right {
 #banner header h2 a:hover {
   border-bottom-color: transparent;
 }
+#banner header p {
+  display: inline;
+}
 #banner header .button {
   vertical-align: middle;
   margin-left: 1em;

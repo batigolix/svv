@@ -1,4 +1,4 @@
-uuid: c051ac0f-ab97-4cb6-ade8-fcc27177b3f1
+uuid: 77a7572a-e4a9-4106-9acb-f1e1b0694f76
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - svv_tools
     - system
   theme:
-    - arcana
-id: arcana_contactinfo
-theme: arcana
+    - seven
+id: seven_contactinfo
+theme: seven
 region: content
 weight: 0
 provider: null

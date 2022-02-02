@@ -25,13 +25,15 @@
  * @see template_preprocess_block()
  */
 #}
-<div{{ attributes }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h3{{ title_attributes }}>{{ label }}</h3>
-  {% endif %}
-  {{ title_suffix }}
+<section id="banner">
+  <header>
+{#  {{ title_prefix }}#}
+{#  {% if label %}#}
+{#    <h3{{ title_attributes }}>{{ label }}</h3>#}
+{#  {% endif %}#}
+{#  {{ title_suffix }}#}
   {% block content %}
     {{ content }}
   {% endblock %}
-</div>
+  </header>
+</section>

@@ -1,0 +1,27 @@
+uuid: b8dce5c1-ee66-4bea-b696-4000d629ac73
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+    - system
+  theme:
+    - seven
+id: seven_booknavigation
+theme: seven
+region: header
+weight: -4
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: Inhoud
+  label_display: visible
+  provider: book
+  block_mode: 'all pages'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/woordenlijst\r\n/woordenlijst/*\r\n"
