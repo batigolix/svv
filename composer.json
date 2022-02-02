@@ -45,7 +45,7 @@
         "drupal/contact_block": "^1.6",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
-        "drupal/core-recommended": "^9.1",
+        "drupal/core-recommended": "^9.3",
         "drupal/ctools": "^3.4",
         "drupal/environment_indicator": "^4.0",
         "drupal/gin": "^3.0@alpha",
