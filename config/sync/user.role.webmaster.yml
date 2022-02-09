@@ -1,7 +1,20 @@
 uuid: e3f506e3-574c-42ad-b6b7-7c90ae4ee557
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.advanced_html
+    - node.type.book
+    - node.type.dictionary_entry
+    - node.type.page
+  module:
+    - book
+    - environment_indicator
+    - filter
+    - node
+    - shortcut
+    - system
+    - toolbar
 id: webmaster
 label: Webmaster
 weight: 3
@@ -13,6 +26,7 @@ permissions:
   - 'access toolbar'
   - 'add content to books'
   - 'administer book outlines'
+  - 'administer menu'
   - 'administer nodes'
   - 'administer shortcuts'
   - 'bypass node access'
