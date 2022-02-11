@@ -2900,4 +2900,42 @@ ul.primary-local-tasks {
   color: #a51b00;
 }
 
+.word-list .views-exposed-form {
+  margin: 1em 0 1em 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.word-list .views-exposed-form input[type=text] {
+  margin-right: 1em;
+}
+.word-list .views-exposed-form input[type=submit] {
+  margin: 2em 0 0 2em;
+}
+.word-list table th a {
+  color: white;
+}
+
+/**
+ * @file
+ * Visual styles for pager.
+ */
+.pager__items {
+  clear: both;
+  text-align: center;
+}
+
+.pager__item {
+  display: inline;
+  padding: 0.5em;
+}
+
+.pager__item.is-active {
+  font-weight: bold;
+}
+
+.dictionary input[type=text] {
+  width: 50%;
+}
+
 /*# sourceMappingURL=main.css.map */

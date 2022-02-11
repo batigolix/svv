@@ -16,31 +16,33 @@
   <section class="wrapper style1">
     <div class="container">
       <div class="row gtr-200">
-        <div class="col-8 col-12-narrower">
+
+        {% if page.sidebar_first %}
+          <div class="col-8 col-12-narrower">
+        {% else %}
+          <div class="col-12 col-12-narrower">
+        {% endif %}
+
           <div id="content">
-
             <!-- Content -->
-
             <article>
               {{ page.help }}
               {{ page.content }}
             </article>
-
           </div>
         </div>
-        <div class="col-4 col-12-narrower">
-          <div id="sidebar">
 
-            <!-- Sidebar -->
-
-            {% if page.sidebar_first %}
-                <section>
+        <!-- Sidebar -->
+        {% if page.sidebar_first %}
+          <div class="col-4 col-12-narrower">
+            <div id="sidebar">
+              <section>
                 {{ page.sidebar_first }}
-                </section>
-            {% endif %}
-
+              </section>
+            </div>
           </div>
-        </div>
+        {% endif %}
+
       </div>
     </div>
   </section>
