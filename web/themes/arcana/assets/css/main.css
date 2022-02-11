@@ -1639,6 +1639,10 @@ label {
   width: 100%;
 }
 
+img.align-right {
+  margin: 0 0 1em 1em;
+}
+
 /* Icon */
 .icon {
   text-decoration: none;
@@ -1712,6 +1716,15 @@ label {
   padding-left: 0;
 }
 .exterior ul.links li {
+  line-height: 2.5em;
+  padding-left: 0;
+}
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+#footer ul li {
   line-height: 2.5em;
   padding-left: 0;
 }
@@ -1856,24 +1869,21 @@ label {
 }
 
 /* Tables */
-table {
+#content table {
   width: 100%;
 }
-table.default {
-  width: 100%;
-}
-table.default tbody tr {
+#content table tbody tr {
   border-bottom: solid 1px #e0e0e0;
 }
-table.default td {
+#content table td {
   padding: 0.5em 1em 0.5em 1em;
 }
-table.default th {
+#content table th {
   font-weight: 600;
   padding: 0.5em 1em 0.5em 1em;
   text-align: left;
 }
-table.default thead {
+#content table thead {
   background-color: #555555;
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -1912,6 +1922,25 @@ table.default thead {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: -0.025em;
+}
+.exterior input[type=submit] a:link, .exterior input[type=submit] a:visited, .exterior input[type=submit] a:active, .exterior input[type=submit] a:hover,
+.exterior input[type=reset] a:link,
+.exterior input[type=reset] a:visited,
+.exterior input[type=reset] a:active,
+.exterior input[type=reset] a:hover,
+.exterior input[type=button] a:link,
+.exterior input[type=button] a:visited,
+.exterior input[type=button] a:active,
+.exterior input[type=button] a:hover,
+.exterior button a:link,
+.exterior button a:visited,
+.exterior button a:active,
+.exterior button a:hover,
+.exterior .button a:link,
+.exterior .button a:visited,
+.exterior .button a:active,
+.exterior .button a:hover {
+  color: #FFF;
 }
 .exterior input[type=submit]:hover,
 .exterior input[type=reset]:hover,
@@ -1970,6 +1999,11 @@ table.default thead {
 .exterior input[type=button].small,
 .exterior button.small,
 .exterior .button.small {
+  font-size: 0.8em;
+}
+.exterior .button.local-task-button {
+  padding: 0 0.5em;
+  line-height: 2em;
   font-size: 0.8em;
 }
 
@@ -2154,6 +2188,9 @@ table.default thead {
 }
 #banner header h2 a:hover {
   border-bottom-color: transparent;
+}
+#banner header p {
+  display: inline;
 }
 #banner header .button {
   vertical-align: middle;
@@ -2726,16 +2763,19 @@ button,
   color: #000;
 }
 .book-block-menu ul.book-menu li.menu-item--expanded {
-  list-style-image: url(../../../core/misc/menu-expanded.png);
+  list-style-image: url(../../../../core/misc/menu-expanded.png);
   list-style-type: circle;
 }
 .book-block-menu ul.book-menu .menu-item--collapsed {
-  list-style-image: url(../../../core/misc/menu-collapsed.png);
+  list-style-image: url(../../../../core/misc/menu-collapsed.png);
   list-style-type: disc;
 }
 .book-block-menu ul.book-menu .menu-item {
   padding-top: 0.2em;
   margin: 0 0 0.2em 0;
+}
+.book-block-menu ul.book-menu .book-menu {
+  margin: 0 0 0 0;
 }
 
 /* book navigation under book content */
@@ -2744,7 +2784,7 @@ button,
   opacity: 0.9;
   margin: 1em 0;
 }
-.book-navigation .menu {
+.book-navigation .book-menu {
   padding-bottom: 0;
   padding-top: 1em;
 }
@@ -2770,6 +2810,94 @@ button,
   float: right;
   text-align: right;
   width: 45%;
+}
+
+ul.primary-local-tasks {
+  padding-left: 0;
+}
+
+/**
+ * @file
+ * Styles for system messages.
+ */
+.messages {
+  padding: 15px 20px 15px 35px;
+  /* LTR */
+  word-wrap: break-word;
+  border: 1px solid;
+  border-width: 1px 1px 1px 0;
+  /* LTR */
+  border-radius: 2px;
+  background: no-repeat 10px 17px;
+  /* LTR */
+  overflow-wrap: break-word;
+}
+
+.messages + .messages {
+  margin-top: 1.538em;
+}
+
+.messages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.messages__item + .messages__item {
+  margin-top: 0.769em;
+}
+
+/* See .color-success in Seven's colors.css */
+.messages--status {
+  color: #325e1c;
+  border-color: #c9e1bd #c9e1bd #c9e1bd transparent;
+  /* LTR */
+  background-color: #f3faef;
+  background-image: url(../../../../misc/icons/73b355/check.svg);
+  box-shadow: -8px 0 0 #77b259;
+  /* LTR */
+}
+
+[dir=rtl] .messages--status {
+  margin-left: 0;
+  border-color: #c9e1bd transparent #c9e1bd #c9e1bd;
+  box-shadow: 8px 0 0 #77b259;
+}
+
+/* See .color-warning in Seven's colors.css */
+.messages--warning {
+  color: #734c00;
+  border-color: #f4daa6 #f4daa6 #f4daa6 transparent;
+  /* LTR */
+  background-color: #fdf8ed;
+  background-image: url(../../../../misc/icons/e29700/warning.svg);
+  box-shadow: -8px 0 0 #e09600;
+  /* LTR */
+}
+
+[dir=rtl] .messages--warning {
+  border-color: #f4daa6 transparent #f4daa6 #f4daa6;
+  box-shadow: 8px 0 0 #e09600;
+}
+
+/* See .color-error in Seven's colors.css */
+.messages--error {
+  color: #a51b00;
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
+  /* LTR */
+  background-color: #fcf4f2;
+  background-image: url(../../../../misc/icons/e32700/error.svg);
+  box-shadow: -8px 0 0 #e62600;
+  /* LTR */
+}
+
+[dir=rtl] .messages--error {
+  border-color: #f9c9bf transparent #f9c9bf #f9c9bf;
+  box-shadow: 8px 0 0 #e62600;
+}
+
+.messages--error p.error {
+  color: #a51b00;
 }
 
 /*# sourceMappingURL=main.css.map */

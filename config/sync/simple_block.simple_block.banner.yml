@@ -1,0 +1,11 @@
+uuid: c3ca5ace-8f0c-4e85-a591-554394f969eb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: banner
+title: banner
+content:
+  value: "<h2><em>Stichting voor de ontplooïng van</em> volksculturele initiatieven</h2><a class=\"button\" href=\"/over-ons\">Lees verder</a>\r\n"
+  format: full_html

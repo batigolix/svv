@@ -1,4 +1,4 @@
-uuid: db6927df-59a6-4c77-9625-c7c6323fba51
+uuid: b4cfa4c1-3525-47f2-b403-40c9c7ad8300
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - system
   theme:
-    - sebas
-id: mainnavigation
-theme: sebas
-region: primary_menu
+    - seven
+id: seven_mainnavigation
+theme: seven
+region: header
 weight: -5
 provider: null
 plugin: 'system_menu_block:main'

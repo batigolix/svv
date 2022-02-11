@@ -1,0 +1,22 @@
+uuid: 3e592252-6866-4d03-b755-eebf597abeaa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.contact
+  module:
+    - simple_block
+  theme:
+    - arcana
+id: contact
+theme: arcana
+region: footer2
+weight: 0
+provider: null
+plugin: 'simple_block:contact'
+settings:
+  id: 'simple_block:contact'
+  label: Contact
+  label_display: visible
+  provider: simple_block
+visibility: {  }

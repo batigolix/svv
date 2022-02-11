@@ -44,6 +44,7 @@ module:
   path: 0
   path_alias: 0
   shortcut: 0
+  simple_block: 0
   svv_dictionary: 0
   svv_tools: 0
   system: 0
@@ -60,10 +61,9 @@ module:
   standard: 1000
 theme:
   stable: 0
-  seven: 0
-  sebas: 0
   classy: 0
   arcana: 0
   claro: 0
   gin: 0
+  seven: 0
 profile: standard

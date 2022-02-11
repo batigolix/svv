@@ -1,0 +1,11 @@
+uuid: c2becc40-d3aa-46cd-9391-14bbce8d1db0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+id: contact
+title: Contact
+content:
+  value: "<ul>\r\n\t<li>Telefoon : 077-4721586</li>\r\n\t<li>E-mail : volkscultuur.velden@gmail.com</li>\r\n\t<li><a href=\"/contact\">Contactformulier</a></li>\r\n</ul>\r\n"
+  format: advanced_html

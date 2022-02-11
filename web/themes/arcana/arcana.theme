@@ -9,9 +9,18 @@
  * Implements hook_preprocess_block().
  */
 function arcana_preprocess_block(&$variables) {
+
+  // Sets a frontpage variable for themeing.
   if ($variables['plugin_id'] === 'system_branding_block') {
     if (\Drupal::service('path.matcher')->isFrontPage()) {
       $variables['is_front'] = TRUE;
+    }
+  }
+
+  // Removes the title from the homepage.
+  if ($variables['plugin_id'] === 'page_title_block') {
+    if (\Drupal::service('path.matcher')->isFrontPage()) {
+      $variables['content'] = NULL;
     }
   }
 }
@@ -25,6 +34,35 @@ function arcana_preprocess_page_title(&$variables) {
     $sub_title = $node->get('field_subtitle')->value;
     if ($sub_title) {
       $variables['sub_title']['#markup'] = $sub_title;
+    }
+  }
+}
+
+/**
+ *
+ */
+function arcana_preprocess_node(&$variables) {
+
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $variables['is_front'] = TRUE;
+    unset($variables['content']['book_navigation']);
+    unset($variables['content']['links']);
+
+  }
+
+}
+
+/**
+ * Implements template_preprocess_book_all_books_block().
+ */
+function arcana_preprocess_book_all_books_block(&$variables) {
+  $config = \Drupal::service('config.factory')
+    ->getEditable('system.site');
+  $front = $config->get('page.front');
+  $front_nid = substr($front, 6);
+  foreach ($variables['book_menus'][0]['menu']['#items'] as $key => $item) {
+    if ($key == $front_nid) {
+      $variables['book_menus'][0]['menu']['#items'][$key]['is_front'] = TRUE;
     }
   }
 }

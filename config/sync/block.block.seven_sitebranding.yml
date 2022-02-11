@@ -1,13 +1,13 @@
-uuid: ce248f80-c434-400e-8bb9-4d441694e119
+uuid: b0cebcd5-0171-4369-b930-09c83da3a27f
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - sebas
-id: sitebranding
-theme: sebas
+    - seven
+id: seven_sitebranding
+theme: seven
 region: header
 weight: -5
 provider: null

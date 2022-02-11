@@ -7,7 +7,7 @@ dependencies:
 id: arcana_pagetitle
 theme: arcana
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: page_title_block
 settings:

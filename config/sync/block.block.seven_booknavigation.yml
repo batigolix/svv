@@ -1,4 +1,4 @@
-uuid: 1672045b-bc9b-444b-beff-a2cc55a3ff95
+uuid: b8dce5c1-ee66-4bea-b696-4000d629ac73
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,10 @@ dependencies:
     - book
     - system
   theme:
-    - sebas
-id: booknavigation
-theme: sebas
-region: sidebar_first
+    - seven
+id: seven_booknavigation
+theme: seven
+region: header
 weight: -4
 provider: null
 plugin: book_navigation

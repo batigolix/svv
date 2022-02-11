@@ -1,13 +1,13 @@
-uuid: 5ca0e115-b483-46d9-9d54-d80473496b54
+uuid: a9ec1fce-d275-466f-8960-1585fb64004f
 langcode: en
 status: true
 dependencies:
   theme:
-    - sebas
-id: tabs
-theme: sebas
+    - seven
+id: seven_tabs
+theme: seven
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

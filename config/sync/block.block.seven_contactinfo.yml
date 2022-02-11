@@ -1,4 +1,4 @@
-uuid: 84f39a32-a166-49fe-a0f5-41047513cbb5
+uuid: 77a7572a-e4a9-4106-9acb-f1e1b0694f76
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,11 @@ dependencies:
     - svv_tools
     - system
   theme:
-    - sebas
-id: contactinfo
-theme: sebas
+    - seven
+id: seven_contactinfo
+theme: seven
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: contact_info
 settings:
@@ -22,6 +22,24 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

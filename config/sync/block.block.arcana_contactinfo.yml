@@ -10,7 +10,7 @@ dependencies:
 id: arcana_contactinfo
 theme: arcana
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: contact_info
 settings:
@@ -22,6 +22,20 @@ settings:
   cache:
     max_age: 3600
     contexts:
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
+      - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles
       - cache_context.user.roles

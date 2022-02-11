@@ -1,6 +1,6 @@
 uuid: 384746ff-428b-435b-b9a9-6e708b0f9380
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -9,7 +9,7 @@ dependencies:
 id: arcana_breadcrumbs
 theme: arcana
 region: content
-weight: -5
+weight: -2
 provider: null
 plugin: system_breadcrumb_block
 settings:
