@@ -2,7 +2,7 @@ name: Build & deploy stage
 on:
   push:
     branches:
-      - 'newdesign'
+      - 'develop'
 jobs:
   build:
     runs-on: ubuntu-latest
