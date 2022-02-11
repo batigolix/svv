@@ -1,0 +1,27 @@
+uuid: 9cf4fa35-71bb-4217-a3f7-bccdc0f443d1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.contact_plus
+  module:
+    - simple_block
+    - system
+  theme:
+    - arcana
+id: contactplus
+theme: arcana
+region: content
+weight: 0
+provider: null
+plugin: 'simple_block:contact_plus'
+settings:
+  id: 'simple_block:contact_plus'
+  label: 'contact plus'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact

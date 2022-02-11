@@ -1,0 +1,11 @@
+uuid: d2299d4b-5656-431f-8f35-e6dbb213fde1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+id: contact_plus
+title: 'contact plus'
+content:
+  value: "<p>U kunt op verschillende manieren contact met ons opnemen.</p>\r\n\r\n<h3>Adres</h3>\r\n\r\n<p>Stichting Veldense Volkscultuur<br />\r\nJan Verschurensingel 20<br />\r\n5941 CK Velden</p>\r\n\r\n<h3>Telefoon</h3>\r\n\r\n<p>077-4721586</p>\r\n\r\n<h3>E-mail</h3>\r\n\r\n<p>h.derix@ziggo.nl</p>\r\n\r\n<h3>Contactformulier</h3>\r\n"
+  format: advanced_html
