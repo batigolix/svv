@@ -21,9 +21,8 @@ jobs:
             if bin/drush cim --no | grep 'WARNING' ; then bin/drush cex --diff --no && exit 1; fi
             chmod a+w web/sites/default
             chmod a+w web/sites/default/settings.php
-            git reset --hard
-            git checkout master
-            git pull origin master
+            git fetch --all
+            git reset --hard origin/master
             ${{ secrets.COMPOSER }} install --no-dev --ignore-platform-reqs
             chmod a-w web/sites/default
             chmod a-w web/sites/default/settings.php
