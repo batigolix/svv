@@ -14,10 +14,10 @@ git commit -m "updating composer packages"
 git push origin master
 
 echo "printing dev login link"
-fin drush @self uli
+fin drush @dev uli
 echo "printing stage login link"
-fin drush @svv.stage uli
+fin drush @stage uli
 echo "printing live login link"
-fin drush @svv.live uli
+fin drush @live uli
 
 git stash pop
