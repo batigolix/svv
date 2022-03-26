@@ -104,9 +104,6 @@
             }
         },
         "patches": {
-            "drupal/gin_toolbar": {
-                "Local tasks": "https://www.drupal.org/files/issues/2021-07-20/3121440-34.patch"
-            }
         },
         "installer-paths": {
             "web/core": [
