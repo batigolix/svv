@@ -3,9 +3,9 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - filter.format.advanced_html
+    - filter.format.full_html
 id: banner
 title: banner
 content:
-  value: "<h2><em>Stichting voor de ontplooiing van</em> volksculturele initiatieven</h2>\r\n\r\n<p><a class=\"button\" href=\"/over-ons\">Lees verder</a></p>\r\n"
-  format: advanced_html
+  value: "<h2><em>Stichting voor de ontplooïng van</em> volksculturele initiatieven</h2><a class=\"button\" href=\"/over-ons\">Lees verder</a>\r\n"
+  format: full_html
