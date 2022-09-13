@@ -4,7 +4,7 @@ ddev:
   root: /var/www/html/web
   uri: http://svv.ddev.site
   paths:
-    config-sync: '/var/www/html/web/config/sync'
+    config-sync: '/var/www/html/config/sync'
 
 live:
   host: ${env.REMOTE_HOST}
