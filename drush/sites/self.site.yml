@@ -1,10 +1,10 @@
 # drush site aliases
 
-dev:
-  root: /var/www/web
-  uri: ${env.VIRTUAL_HOST}
+ddev:
+  root: /var/www/html/web
+  uri: http://svv.ddev.site
   paths:
-    config-sync: '/var/www/web/config/sync'
+    config-sync: '/var/www/html/web/config/sync'
 
 live:
   host: ${env.REMOTE_HOST}
