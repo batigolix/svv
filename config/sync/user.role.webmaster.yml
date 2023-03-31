@@ -8,6 +8,7 @@ dependencies:
     - node.type.dictionary_entry
     - node.type.page
   module:
+    - block
     - book
     - environment_indicator
     - filter
@@ -25,6 +26,7 @@ permissions:
   - 'access environment indicator'
   - 'access toolbar'
   - 'add content to books'
+  - 'administer blocks'
   - 'administer book outlines'
   - 'administer menu'
   - 'administer nodes'
