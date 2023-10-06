@@ -514,6 +514,14 @@
 			padding-left: 0;
 		}
 	}
+  .copyright {
+    li {
+      border-left: solid 1px #e0e0e0;
+      display: inline-block;
+      padding: 0 0 0 1em;
+      margin: 0 0 0 1em;
+    }
+  }
 }
 
 /* Icons */

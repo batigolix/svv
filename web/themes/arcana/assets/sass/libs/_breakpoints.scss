@@ -4,7 +4,7 @@
 
 	/// Breakpoints.
 	/// @var {list}
-	$breakpoints: () !global;
+	$breakpoints: ();
 
 // Mixins.
 
@@ -170,22 +170,22 @@
 									}
 
 								// Less than or equal (<= y)
-									@elseif ($op == 'lte') {
+									@else if ($op == 'lte') {
 										$media: 'screen and (max-width: ' + $y + ')';
 									}
 
 								// Greater than (> y)
-									@elseif ($op == 'gt') {
+									@else if ($op == 'gt') {
 										$media: 'screen and (min-width: ' + ($y + 1) + ')';
 									}
 
 								// Less than (< x)
-									@elseif ($op == 'lt') {
+									@else if ($op == 'lt') {
 										$media: 'screen and (max-width: ' + ($x - 1) + ')';
 									}
 
 								// Not (< x and > y)
-									@elseif ($op == 'not') {
+									@else if ($op == 'not') {
 										$media: 'screen and (max-width: ' + ($x - 1) + '), screen and (min-width: ' + ($y + 1) + ')';
 									}
 

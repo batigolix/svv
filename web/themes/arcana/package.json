@@ -1,15 +1,10 @@
 {
-  "name": "arcana",
-  "private": true,
+  "name": "massively",
   "scripts": {
-    "sass-watch": "node-sass -w --output-style expanded scss -o css",
-    "sass-compile": "node-sass --output-style expanded scss -o css",
-    "livereload": "livereload css",
-    "start": "run-p sass-watch livereload"
+    "build": "sass scss css",
+    "watch": "sass assets/sass:assets/css -w"
   },
-  "devDependencies": {
-    "livereload": "^0.7.0",
-    "node-sass": "^7.0.0",
-    "npm-run-all": "^4.1.3"
+  "dependencies": {
+    "sass": "^1.49.8"
   }
 }
