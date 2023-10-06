@@ -10,6 +10,7 @@ stackable: false
 storage: folder
 folder: ../config_dev
 module:
+  devel_generate: 0
   devel: 0
   stage_file_proxy: 0
 theme: {  }
