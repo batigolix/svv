@@ -30,11 +30,12 @@ function arcana_preprocess_block(&$variables) {
  */
 function arcana_preprocess_page_title(&$variables) {
   $node = \Drupal::request()->attributes->get('node');
-  $type = $node->getType();
-  if ($node && $type==='book') {
-    $sub_title = $node->get('field_subtitle')->value;
-    if ($sub_title) {
-      $variables['sub_title']['#markup'] = $sub_title;
+  if ($node) {
+    if ($node->getType() === 'book') {
+      $sub_title = $node->get('field_subtitle')->value;
+      if ($sub_title) {
+        $variables['sub_title']['#markup'] = $sub_title;
+      }
     }
   }
 }

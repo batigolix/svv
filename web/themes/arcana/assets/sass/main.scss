@@ -124,7 +124,7 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 16pt;
+    font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
 	}
@@ -278,7 +278,7 @@
 
 	header {
 		p {
-			color: _palette(fg-light);
+			color: _palette(fg-bold);
 			font-size: 1.25em;
 			position: relative;
 			margin-top: -1.25em;
