@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
   module:
     - contact
+    - file
     - filter
     - shortcut
     - system
@@ -19,4 +20,5 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'delete own files'
   - 'use text format basic_html'

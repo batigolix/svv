@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.dictionary_entry.field_conjugation
+    - field.field.node.dictionary_entry.field_first_char_head_word
+    - field.field.node.dictionary_entry.field_first_char_translation
     - field.field.node.dictionary_entry.field_head_word
     - field.field.node.dictionary_entry.field_translation
     - node.type.dictionary_entry

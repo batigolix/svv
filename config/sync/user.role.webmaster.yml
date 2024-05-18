@@ -9,8 +9,10 @@ dependencies:
     - node.type.page
   module:
     - block
+    - block_content
     - book
     - environment_indicator
+    - file
     - filter
     - node
     - shortcut
@@ -22,10 +24,13 @@ weight: 3
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access environment indicator'
   - 'access toolbar'
   - 'add content to books'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer blocks'
   - 'administer book outlines'
   - 'administer menu'
@@ -45,6 +50,7 @@ permissions:
   - 'delete dictionary_entry revisions'
   - 'delete own book content'
   - 'delete own dictionary_entry content'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit any book content'

@@ -1,0 +1,3 @@
+- nos lettertype
+- 500 errors
+- aliasing

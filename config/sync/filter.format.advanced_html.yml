@@ -8,15 +8,6 @@ name: 'Advanced HTML'
 format: advanced_html
 weight: 0
 filters:
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: true
-    weight: -10
-    settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span> <a hreflang href> <blockquote cite> <ul type> <ol type start> <img src alt height width data-entity-type data-entity-uuid data-align data-caption> <strong> <em> <code> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
-      filter_html_help: true
-      filter_html_nofollow: false
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -29,15 +20,30 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
     weight: 0
     settings: {  }
-  filter_autop:
-    id: filter_autop
+  filter_html:
+    id: filter_html
     provider: filter
     status: true
-    weight: 0
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <span> <a hreflang href> <blockquote cite> <ul type> <ol type start> <img src alt height width data-entity-type data-entity-uuid data-align data-caption> <strong> <em> <code> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 1
     settings: {  }

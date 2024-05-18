@@ -43,9 +43,9 @@
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_split": "2.x",
         "drupal/contact_block": "^1.6",
-        "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
-        "drupal/core-recommended": "^9.3",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
         "drupal/ctools": "^3.4",
         "drupal/devel": "^5.1",
         "drupal/environment_indicator": "^4.0",
@@ -60,7 +60,7 @@
         "drupal/stage_file_proxy": "^2.1",
         "drupal/token": "^1.7",
         "drupal/upgrade_status": "^4.3",
-        "drush/drush": "^11.6",
+        "drush/drush": "^12.5",
         "harvesthq/chosen": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0"
     },
@@ -100,17 +100,7 @@
                 "[web-root]/modules/README.txt": false,
                 "[web-root]/themes/README.txt": false,
                 "[web-root]/libraries/README.txt": false,
-                "[web-root]/web.config": false,
-                "[web-root]/.htaccess": {
-                    "mode": "replace",
-                    "path": "web/core/assets/scaffold/files/htaccess",
-                    "overwrite": false
-                },
-                "[web-root]/sites/default/default.settings.php": {
-                    "mode": "replace",
-                    "path": "web/core/assets/scaffold/files/default.settings.php",
-                    "overwrite": false
-                }
+                "[web-root]/web.config": false
             }
         },
         "patches": {
