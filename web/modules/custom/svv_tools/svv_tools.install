@@ -15,11 +15,13 @@ function svv_tools_update_8001() {
     ->getEditable('svv_tools.settings');
   $webmaster = $config->get('webmaster');
   $query = \Drupal::entityQuery('user')
+    ->accessCheck(TRUE)
     ->condition('name', $webmaster);
   $uids = $query->execute();
   $array_values = array_values($uids);
   $uid = array_shift($array_values);
   $query = \Drupal::entityQuery('node')
+    ->accessCheck(TRUE)
     ->condition('type', 'book');
   $nids = $query->execute();
   if (isset($uid)) {
