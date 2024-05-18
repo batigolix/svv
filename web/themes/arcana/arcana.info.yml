@@ -3,7 +3,7 @@ type: theme
 base theme: stable
 description: A flexible theme with a responsive, mobile-first layout.
 package: Custom
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 libraries:
   - arcana/global
   - arcana/custom
