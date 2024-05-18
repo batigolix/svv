@@ -1,52 +1,53 @@
-uuid: 3c55a3cb-24d4-41f9-8992-5c5de7afea3a
-langcode: en
+uuid: c19b4a8f-18fb-4017-8d71-b320fcf82a56
+langcode: nl
 status: true
 dependencies:
   config:
     - filter.format.advanced_html
   module:
-    - ckeditor
+    - ckeditor5
 format: advanced_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Format
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: Tools
-          items:
-            - Source
-        -
-          name: Tables
-          items:
-            - Table
-  plugins: {  }
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - link
+      - blockQuote
+      - code
+      - bulletedList
+      - numberedList
+      - insertTable
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<img src alt height width data-entity-type data-entity-uuid data-align data-caption>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+image_upload: {  }

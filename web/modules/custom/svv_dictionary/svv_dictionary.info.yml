@@ -1,12 +1,12 @@
 name: 'svv_dictionary'
 type: module
 description: 'SVV Dictionary'
-core_version_requirement: ^8.8.0 || ^9.0
+core_version_requirement: ^9.0 || ^10
 package: 'Custom'
 dependencies:
-  - migrate_tools
-  - migrate_plus
-  - migrate_source_csv
+  - drupal:migrate_tools
+  - drupal:migrate_plus
+  - drupal:migrate_source_csv
 
 config_devel:
   - migrate_plus.migration.svv_dictionary
