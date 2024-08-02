@@ -60,7 +60,7 @@
         "drupal/stage_file_proxy": "^2.1",
         "drupal/token": "^1.7",
         "drupal/upgrade_status": "^4.3",
-        "drush/drush": "^12.5",
+        "drush/drush": "^13.0",
         "harvesthq/chosen": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0"
     },
