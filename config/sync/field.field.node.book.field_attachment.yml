@@ -1,0 +1,27 @@
+uuid: 31bbb6a3-7a17-4da9-bb32-1731bd3d0ae3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - node.type.book
+  module:
+    - file
+id: node.book.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: book
+label: Bijlage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx xls xlsx'
+  max_filesize: '10 MB'
+  description_field: true
+field_type: file

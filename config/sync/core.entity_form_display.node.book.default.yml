@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.book.body
+    - field.field.node.book.field_attachment
     - field.field.node.book.field_banner
     - field.field.node.book.field_subtitle
     - image.style.thumbnail
     - node.type.book
   module:
+    - file
     - image
     - path
     - text
@@ -34,6 +36,13 @@ content:
     weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_attachment:
+    type: file_generic
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
   field_banner:
     type: image_image

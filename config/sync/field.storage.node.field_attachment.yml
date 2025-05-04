@@ -1,0 +1,23 @@
+uuid: 929ddbf3-f927-481c-a44c-df47308a6b04
+langcode: nl
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_attachment
+field_name: field_attachment
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
