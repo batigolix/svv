@@ -2,11 +2,8 @@ uuid: 4b7259fa-b2a9-41fc-9cac-7e89315cce91
 langcode: nl
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
     - contact
-    - filter
     - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
@@ -17,4 +14,3 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
-  - 'use text format restricted_html'
