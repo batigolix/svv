@@ -49,7 +49,7 @@
         "drupal/ctools": "^3.4",
         "drupal/devel": "^5.1",
         "drupal/environment_indicator": "^4.0",
-        "drupal/gin": "^4.0",
+        "drupal/gin": "^5.0",
         "drupal/gin_toolbar": "^2.0.0@beta",
         "drupal/honeypot": "^2.0",
         "drupal/migrate_plus": "^6.0",
