@@ -33,7 +33,7 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.2",
         "drupal/betterlt": "^2.0",
