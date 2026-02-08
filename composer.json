@@ -34,7 +34,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/admin_toolbar": "^3.2",
         "drupal/betterlt": "^2.0",
         "drupal/chosen": "^5.0",
