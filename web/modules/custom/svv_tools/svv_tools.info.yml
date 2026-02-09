@@ -2,7 +2,7 @@ type: module
 name: SVV tools
 description: 'SVV custom stuff'
 package: Custom
-core_version_requirement: ^9.0 || ^10
+core_version_requirement: ^9.0 || ^10 || ^11
 dependencies:
   - book
 libraries:
