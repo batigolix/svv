@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01f3fd803f4f2307ca16cb36043321e5",
+    "content-hash": "74ab5de4a3d2c6f73a94aade9786d70b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1599,27 +1599,31 @@
         },
         {
             "name": "drupal/book",
-            "version": "2.0.4",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/book.git",
-                "reference": "2.0.4"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/book-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "ee41dc2c59bc95c3a241ed9d0ecd22eacbd3ca46"
+                "url": "https://ftp.drupal.org/files/projects/book-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "df7a98cdc8114329337bbe6f3503358cef23786b"
             },
             "require": {
-                "drupal/core": "^10.3 || ^11",
+                "drupal/core": "^11.2",
                 "ext-pdo": "*"
+            },
+            "require-dev": {
+                "drupal/pathauto": "^1.14",
+                "drupal/search_api": "^1.40"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1767195446",
+                    "version": "3.0.1",
+                    "datestamp": "1774022170",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
