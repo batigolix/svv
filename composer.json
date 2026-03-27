@@ -32,7 +32,7 @@
         "drupal/admin_toolbar": "^3.2",
         "drupal/book": "^3.0",
         "drupal/chosen": "^5.0",
-        "drupal/coder": "^8.3",
+        "drupal/coder": "^9.0",
         "drupal/config_filter": "^2.2",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_split": "2.x",
