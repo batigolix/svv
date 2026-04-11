@@ -3,6 +3,7 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
   module:
     - node
@@ -13,7 +14,7 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 module: taxonomy
-description: 'Content belonging to a certain taxonomy term.'
+description: 'Inhoud van een bepaalde taxonomieterm'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -29,6 +30,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 10
           total_pages: 0
           id: 0
@@ -43,13 +45,12 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: 'Opnieuw instellen'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -280,7 +281,7 @@ display:
         type: node_rss
         options:
           relationship: none
-          view_mode: default
+          view_mode: rss
       query:
         type: views_query
         options: {  }

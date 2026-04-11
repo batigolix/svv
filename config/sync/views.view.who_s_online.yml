@@ -66,7 +66,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Reset
+          reset_button_label: 'Opnieuw instellen'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -154,8 +154,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             min_placeholder: ''
             max_placeholder: ''
             placeholder: ''

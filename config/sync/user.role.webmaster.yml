@@ -10,7 +10,6 @@ dependencies:
   module:
     - block
     - block_content
-    - book
     - environment_indicator
     - file
     - filter
@@ -28,18 +27,15 @@ permissions:
   - 'access content overview'
   - 'access environment indicator'
   - 'access toolbar'
-  - 'add content to books'
   - 'administer block content'
   - 'administer block types'
   - 'administer blocks'
-  - 'administer book outlines'
   - 'administer menu'
   - 'administer nodes'
   - 'administer shortcuts'
   - 'bypass node access'
   - 'create book content'
   - 'create dictionary_entry content'
-  - 'create new books'
   - 'create page content'
   - 'customize shortcut links'
   - 'delete all revisions'
@@ -59,6 +55,7 @@ permissions:
   - 'edit own book content'
   - 'edit own dictionary_entry content'
   - 'edit own page content'
+  - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert book revisions'
   - 'revert dictionary_entry revisions'
