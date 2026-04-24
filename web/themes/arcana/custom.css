@@ -31,3 +31,16 @@
 .exterior h6 {
   margin-bottom: 0.5em;
 }
+
+/* Add em-dash bullets to book navigation menu items */
+.book-navigation .book-menu li {
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.book-navigation .book-menu li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #26632e;
+}

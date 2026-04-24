@@ -11,16 +11,27 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - undo
+      - redo
+      - '|'
       - heading
+      - '|'
       - bold
+      - strikethrough
+      - underline
       - italic
       - '|'
+      - removeFormat
       - link
       - blockQuote
+      - '|'
       - code
       - bulletedList
       - numberedList
+      - indent
+      - outdent
       - insertTable
+      - horizontalLine
       - sourceEditing
       - drupalInsertImage
   plugins:
