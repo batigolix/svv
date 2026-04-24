@@ -16,3 +16,18 @@
 /*#toolbar-bar button {*/
 /*  color: transparent !important;*/
 /*}*/
+
+/* Reduced spacing between paragraphs */
+.exterior p {
+  margin: 0 0 0.5em 0;
+}
+
+/* Reduced spacing after headings */
+.exterior h1,
+.exterior h2,
+.exterior h3,
+.exterior h4,
+.exterior h5,
+.exterior h6 {
+  margin-bottom: 0.5em;
+}
