@@ -32,15 +32,8 @@
   margin-bottom: 0.5em;
 }
 
-/* Add em-dash bullets to book navigation menu items */
-.book-navigation .book-menu li {
-  position: relative;
-  padding-left: 1.2em;
-}
-
-.book-navigation .book-menu li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: #26632e;
+/* Book navigation: more spacing between items, tighter line-height within items */
+.book-block-menu ul.book-menu li.menu-item {
+  margin-bottom: 0.75em;
+  line-height: 1.2;
 }
