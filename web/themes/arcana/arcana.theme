@@ -58,13 +58,40 @@ function arcana_preprocess_node(&$variables) {
  * Implements template_preprocess_book_all_books_block().
  */
 function arcana_preprocess_book_all_books_block(&$variables) {
-  $config = \Drupal::service('config.factory')
-    ->getEditable('system.site');
-  $front = $config->get('page.front');
-  $front_nid = substr($front, 6);
-  foreach ($variables['book_menus'][0]['menu']['#items'] as $key => $item) {
-    if ($key == $front_nid) {
-      $variables['book_menus'][0]['menu']['#items'][$key]['is_front'] = TRUE;
+  $book_manager = \Drupal::service('book.manager');
+
+  // Determine the current book context.
+  $current_bid = 0;
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\book\BookInterface) {
+    $book = $node->getBook();
+    if (!empty($book['bid'])) {
+      $current_bid = $book['bid'];
     }
   }
+
+  // On non-book pages, the contrib block only renders a top-level link per
+  // book. Rebuild the full tree so the sidebar shows the complete outline
+  // everywhere.
+  $books = $book_manager->getAllBooks();
+  foreach ($variables['book_menus'] as $index => &$menu_data) {
+    $book_id = $menu_data['id'];
+    if ($book_id != $current_bid && isset($books[$book_id])) {
+      $data = $book_manager->bookTreeAllData($book_id, $books[$book_id]);
+      $menu_data['menu'] = $book_manager->bookTreeOutput($data);
+      $menu_data['menu']['#book_title'] = $books[$book_id]['title'];
+    }
+  }
+  unset($menu_data);
+
+  // Mark the front-page item so book-tree.html.twig can skip the link on the
+  // top-level entry that points at the site front page.
+  $front = \Drupal::config('system.site')->get('page.front');
+  $front_nid = substr($front, 6);
+  foreach ($variables['book_menus'] as $index => &$menu_data) {
+    if (!empty($menu_data['menu']['#items'][$front_nid])) {
+      $menu_data['menu']['#items'][$front_nid]['is_front'] = TRUE;
+    }
+  }
+  unset($menu_data);
 }
