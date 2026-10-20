@@ -2,6 +2,7 @@ _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 module:
   automated_cron: 0
+  ban: 0
   block: 0
   block_content: 0
   book: 0
@@ -39,6 +40,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  perimeter: 0
   phpass: 0
   redirect: 0
   shortcut: 0
