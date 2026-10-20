@@ -61,7 +61,6 @@ module:
 theme:
   arcana: 0
   claro: 0
-  stable9: 0
   stable: 0
   default_admin: 0
 profile: standard
