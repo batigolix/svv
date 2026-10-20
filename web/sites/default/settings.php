@@ -809,3 +809,14 @@ $ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
+
+/**
+ * MySQL transaction isolation level.
+ *
+ * Drupal recommends READ COMMITTED (MySQL default is REPEATABLE READ, which
+ * can cause phantom-row issues under concurrent writes). Set here, after any
+ * environment-specific include has populated $databases.
+ */
+if (!empty($databases['default']['default'])) {
+  $databases['default']['default']['init_commands']['isolation'] = 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED';
+}
