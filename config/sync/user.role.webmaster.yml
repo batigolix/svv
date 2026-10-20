@@ -16,7 +16,6 @@ dependencies:
     - node
     - shortcut
     - system
-    - toolbar
 id: webmaster
 label: Webmaster
 weight: 3
@@ -26,7 +25,6 @@ permissions:
   - 'access block library'
   - 'access content overview'
   - 'access environment indicator'
-  - 'access toolbar'
   - 'administer block content'
   - 'administer block types'
   - 'administer blocks'

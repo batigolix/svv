@@ -1,0 +1,13 @@
+uuid: 76000263-5c28-4a4c-a37a-90ca106505cc
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - navigation
+_core:
+  default_config_hash: nqVwm91Uyib_rvFaNPF1MdYqHlmZ38w5rsOVVy4uWDw
+id: content
+label: Content
+description: 'Content task links'
+locked: true
