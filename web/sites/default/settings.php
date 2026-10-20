@@ -257,18 +257,6 @@ $config_directories = array();
  */
 
 /**
- * The active installation profile.
- *
- * Changing this after installation is not recommended as it changes which
- * directories are scanned during extension discovery. If this is set prior to
- * installation this value will be rewritten according to the profile selected
- * by the user.
- *
- * @see install_select_profile()
- */
-# $settings['install_profile'] = '';
-
-/**
  * Salt for one-time login links, cancel links, form tokens, etc.
  *
  * This variable will be set to a random value by the installer. All one-time
@@ -751,6 +739,23 @@ $settings['trusted_host_patterns'] = array(
 );
 
 $settings["file_temp_path"] = "sites/default/files/temp";
+
+/**
+ * Preserve HTML5 form validation.
+ *
+ * Drupal 12 will default this to FALSE. Set it explicitly to keep current
+ * client-side validation behaviour on all forms.
+ */
+$settings['enable_html5_validation'] = TRUE;
+
+/**
+ * SameSite cookie attribute.
+ *
+ * Drupal's status report requires an explicit value (Lax, Strict or None).
+ * Lax is a safe web default: cookies are sent on top-level navigations but
+ * not on cross-site subrequests.
+ */
+ini_set('session.cookie_samesite', 'Lax');
 
 /**
  * Load local development override configuration, if available.
