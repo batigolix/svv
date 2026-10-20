@@ -741,12 +741,12 @@ $settings['trusted_host_patterns'] = array(
 $settings["file_temp_path"] = "sites/default/files/temp";
 
 /**
- * Preserve HTML5 form validation.
+ * HTML5 form validation.
  *
- * Drupal 12 will default this to FALSE. Set it explicitly to keep current
- * client-side validation behaviour on all forms.
+ * Explicitly set — Drupal 12 will default this to FALSE anyway, and we have
+ * no forms that rely on client-side HTML5 constraints.
  */
-$settings['enable_html5_validation'] = TRUE;
+$settings['enable_html5_validation'] = FALSE;
 
 /**
  * SameSite cookie attribute.
