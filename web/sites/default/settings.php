@@ -738,7 +738,29 @@ $settings['trusted_host_patterns'] = array(
   '^\.veldense-volkscultuur\.nl$',
 );
 
-$settings["file_temp_path"] = "sites/default/files/temp";
+$settings['file_temp_path'] = 'sites/default/files/temp';
+
+/**
+ * Public file path.
+ *
+ * Set explicitly to ensure public:// resolves correctly on all environments,
+ * including during Drush deploys where the DB may not yet be available.
+ */
+$settings['file_public_path'] = 'sites/default/files';
+
+/**
+ * Locale translation path.
+ *
+ * Explicitly map translations:// to a sub-directory of the public files path.
+ * Without this, TranslationsStream falls back to public://translations, which
+ * requires public:// to resolve at the moment locale imports run during deploy.
+ * An explicit value avoids that dependency and prevents the
+ * "destination directory translations:// is not properly configured" error
+ * that occurs on production when module translation files are imported.
+ *
+ * @see \Drupal\locale\StreamWrapper\TranslationsStream::basePath()
+ */
+$settings['locale_translation_path'] = 'sites/default/files/translations';
 
 /**
  * HTML5 form validation.
