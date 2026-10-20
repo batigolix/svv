@@ -1,13 +1,13 @@
-uuid: b7b0104b-5898-4f12-8a17-13f53a105345
-langcode: nl
+uuid: 4eeae323-8bae-4f83-8627-60d4c20d73e5
+langcode: en
 status: true
 dependencies:
   theme:
-    - gin
+    - default_admin
 _core:
-  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
-id: gin_local_actions
-theme: gin
+  default_config_hash: kS_bn150yD1JkjLZ3KXzxiu_utZAeHo3lBg8JHFLv60
+id: default_admin_local_actions
+theme: default_admin
 region: content
 weight: -10
 provider: null
