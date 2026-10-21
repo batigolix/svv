@@ -43,6 +43,7 @@
         "drupal/tagify": "^1.2",
         "drupal/token": "^1.7",
         "drupal/upgrade_status": "^4.3",
+        "drupal/webform": "^6.3",
         "drush/drush": "^13",
         "oomphinc/composer-installers-extender": "^2.0"
     },
