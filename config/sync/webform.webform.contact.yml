@@ -14,34 +14,32 @@ uid: null
 template: false
 archive: false
 id: contact
-title: Contact
-description: 'Basic email contact webform.'
+title: 'Contact opnemen'
+description: 'Neem contact met ons op via onderstaand formulier.'
 categories: {  }
-elements: |
+elements: |-
   name:
-    '#title': 'Your Name'
+    '#title': Naam
     '#type': textfield
     '#required': true
     '#default_value': '[current-user:display-name]'
   email:
-    '#title': 'Your Email'
+    '#title': E-mailadres
     '#type': email
     '#required': true
     '#default_value': '[current-user:mail]'
   subject:
-    '#title': Subject
+    '#title': Onderwerp
     '#type': textfield
     '#required': true
-    '#test': 'Testing contact webform from [site:name]'
   message:
-    '#title': Message
+    '#title': Bericht
     '#type': textarea
     '#required': true
-    '#test': 'Please ignore this email.'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#submit__label': Versturen
 css: ''
 javascript: ''
 settings:
@@ -83,6 +81,7 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_file_limit_message: ''
   form_attributes: {  }
   form_method: ''
   form_action: ''
@@ -149,7 +148,7 @@ settings:
   confirmation_type: url_message
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -226,56 +225,18 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
+  contact_email:
     id: email
-    handler_id: email_confirmation
-    label: 'Email confirmation'
+    handler_id: contact_email
+    label: 'Contact e-mail'
     notes: ''
     status: true
     conditions: {  }
-    weight: 1
+    weight: 0
     settings:
       states:
         - completed
-      to_mail: '[current-user:mail]'
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: _default
-      from_options: {  }
-      from_name: _default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      langcode: ''
-      parameters: {  }
-      debug: false
-  email_notification:
-    id: email
-    handler_id: email_notification
-    label: 'Email notification'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
+      to_mail: 'mdoesborg@gmail.com,bdoesborg@gmail.com'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -284,7 +245,7 @@ handlers:
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
       from_name: '[webform_submission:values:name:raw]'
-      reply_to: ''
+      reply_to: '[webform_submission:values:email:raw]'
       return_path: ''
       sender_mail: ''
       sender_name: ''
