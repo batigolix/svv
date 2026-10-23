@@ -28,7 +28,7 @@
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.1",
         "drupal/environment_indicator": "^4.0",
-        "drupal/honeypot": "^2.0",
+        "drupal/honeypot": "^2",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_source_csv": "^3.4",
         "drupal/migrate_tools": "^6.0",
