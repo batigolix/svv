@@ -8,26 +8,29 @@
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_BASE_FORM_ID_alter() for webform_submission_contact_form.
+ *
+ * Layered on top of the honeypot module: adds a plaats-vraag the user must
+ * answer. Kept in code so the accepted-spellings list stays versioned.
  */
-function svv_tools_form_contact_message_website_contact_form_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  $form['actions']['preview']['#access'] = FALSE;
-  $form['location'] = [
+function svv_tools_form_webform_submission_contact_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  $form['elements']['location'] = [
     '#type' => 'textfield',
     '#title' => t('In welke plaats is de Stichting Veldense Volkscultuur actief?'),
     '#size' => 24,
     '#description' => t('We stellen deze vraag als simpele controle dat dit formulier niet door een robot wordt ingevuld'),
+    '#weight' => 99,
   ];
-  $form['#validate'][] = '_spam_validate';
+  $form['#validate'][] = '_svv_tools_contact_location_validate';
 }
 
 /**
- * Validates spam submission contact form.
+ * Validates the plaats-vraag on the contact webform.
  */
-function _spam_validate(array &$form, FormStateInterface $form_state) {
-  $location_string = strtolower($form_state->getValue('location'));
-  $locations = ['velden', 'velde', 'venlo', 'lomm', 'vellde', 'veldde'];
-  if (!in_array($location_string, $locations)) {
+function _svv_tools_contact_location_validate(array &$form, FormStateInterface $form_state): void {
+  $location = strtolower((string) $form_state->getValue('location'));
+  $allowed = ['velden', 'velde', 'venlo', 'lomm', 'vellde', 'veldde'];
+  if (!in_array($location, $allowed, TRUE)) {
     $form_state->setErrorByName('location', t('Het antwoord is niet juist. Om te controleren of u geen spamrobot bent, vragen we om in te vullen in welke plaats de stichting actief is. Als het niet lukt, stuur dan een email naar volkscultuur.velden@gmail.com'));
   }
 }
