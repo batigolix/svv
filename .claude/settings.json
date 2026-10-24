@@ -1,4 +1,10 @@
 {
+  "permissions": {
+    "ask": [
+      "Bash(ddev drush @live *)",
+      "Bash(ddev drush @stage *)"
+    ]
+  },
   "hooks": {
     "PreCompact": [
       {
