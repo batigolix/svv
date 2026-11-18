@@ -27,7 +27,7 @@
         "drupal/core-recommended": "^11",
         "drupal/ctools": "^4.0",
         "drupal/devel": "^5.1",
-        "drupal/environment_indicator": "^4.0",
+        "drupal/environment_indicator": "5.0.x-dev",
         "drupal/honeypot": "^2",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_source_csv": "^3.4",
@@ -87,6 +87,9 @@
             }
         },
         "patches": {
+            "drupal/environment_indicator": {
+                "#3457688: Support for core hook based submodule (Navigation integration)": "patches/environment_indicator-navigation-3457688-mr148.patch"
+            }
         },
         "installer-paths": {
             "web/core": [
